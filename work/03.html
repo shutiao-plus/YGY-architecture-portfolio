@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>山间·聚场 — 杨官运</title>
+<meta name="description" content="山间·聚场 · 学生友好型校园剧场 / 学生活动中心设计 — 杨官运建筑设计作品。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="山间·聚场 — 杨官运">
+<meta property="og:image" content="../assets/p/project-03/01-cover.webp">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2316140f'/%3E%3Ctext x='16' y='23' font-size='17' fill='%23f7f5f1' text-anchor='middle' font-family='Georgia,serif'%3E%E6%9D%A8%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/css/style.css">
+
+<!-- 落地页的第一帧：如果是从目录点进来的，趁解析时就把那张封面盖上，
+     避免"新文档先白一下、再出现遮罩"造成的停顿感 -->
+<script>
+  (function () {
+    try {
+      var raw = sessionStorage.getItem('dsh-transit');
+      if (!raw) return;
+      sessionStorage.removeItem('dsh-transit');
+      var d = JSON.parse(raw);
+      if (!d || d.no !== '03' || !d.src) return;
+      var v = document.createElement('div');
+      v.id = 'arrive';
+      v.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#f6f1e7;' +
+        'opacity:1;transition:opacity .34s ease .04s;pointer-events:none';
+      v.innerHTML = '<img alt="" src="' + d.src + '" style="width:100%;height:100%;object-fit:cover">';
+      (document.documentElement).appendChild(v);
+      window.__arriveAt = Date.now();
+      addEventListener('load', function () {
+        setTimeout(function () {
+          v.style.opacity = '0';
+          setTimeout(function () { v.remove(); }, 800);
+        }, 60);
+      });
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body class="page-work" data-no="03" style="--accent:#4f4a42; --deck-bg:#12100d; --deck-glow:#3a352c">
+
+<script>
+  (function () {
+    document.documentElement.classList.add('js');
+    setTimeout(function () {
+      if (window.__revealReady) return;
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
+    }, 1500);
+  })();
+</script>
+
+<a class="skip" href="#main">跳到内容</a>
+
+<header class="site-head" id="siteHead">
+  <a class="brand" href="../index.html">
+    <span class="brand__cn">杨官运</span>
+    <span class="brand__en">YANG GUANYUN</span>
+  </a>
+  <div class="head-right">
+    <span class="head-count">03 / 06</span>
+    <nav class="head-nav" aria-label="主导航">
+      <a href="../index.html">目录</a>
+      <a href="../about.html">关于</a>
+    </nav>
+    <button class="viewswitch" id="viewSwitch" type="button" aria-pressed="false">
+      <span class="viewswitch__i" aria-hidden="true"></span>
+      <span class="viewswitch__t">叠层</span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+<article class="work">
+
+  <header class="work__hero">
+    <img src="../assets/p/project-03/01-cover.webp"
+         srcset="../assets/p/project-03/01-cover-800.webp 800w, ../assets/p/project-03/01-cover-1100.webp 1100w, ../assets/p/project-03/01-cover.webp 1600w"
+         sizes="100vw" alt="山间·聚场 主视觉"
+         width="1600" height="900" fetchpriority="high" decoding="async">
+    <div class="work__scrim" aria-hidden="true"></div>
+    <div class="work__head">
+      <div class="wrap">
+        <p class="work__kicker"><span class="work__no">03</span><span class="work__type">校园剧场设计</span></p>
+        <h1 class="work__title">山间·聚场</h1>
+        <p class="work__en">Mountain Gathering</p>
+        <p class="work__sub">学生友好型校园剧场 / 学生活动中心设计</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <dl class="work__spec">
+      <div><dt>地点</dt><dd>重庆大学虎溪校区</dd></div>
+      <div><dt>面积</dt><dd>84,784 ㎡</dd></div>
+      <div><dt>年份</dt><dd>2026.04</dd></div>
+      <div><dt>团队</dt><dd>杨官运、王一凡、宋芸珂</dd></div>
+      <div><dt>来源</dt><dd>大四下课程作业</dd></div>
+      <div><dt>指导</dt><dd>许景峰</dd></div>
+      <div><dt>参与</dt><dd>前期分析、方案构思、3D 建模、部分工程图、渲染、后期处理</dd></div>
+    </dl>
+
+    <p class="work__lede">剧场不必是校园里最「正式」的那栋楼——它可以是一层被架空的公共界面。</p>
+
+    <div class="work__body">
+  <section class="chapter" id="c01">
+    <div class="chapter__rail">
+      <span class="chapter__no">01</span>
+      <h2 class="chapter__title">设计命题</h2>
+    </div>
+    <p class="reveal">校园剧场与学生活动中心通常是校园里「最正式」的建筑：大门紧闭，与日常校园生活隔着一层。但虎溪校区的学生需要的不只是一座观演建筑，更是一个日常可以进入、停留、穿行的公共场所。怎么让剧场从「仪式性容器」变成「校园客厅」，是设计的核心命题。</p>
+      <figure class="fig fig--wide chapter__fig--out reveal" data-fig="p03">
+        <img src="../assets/p/project-03/01-render.webp" srcset="../assets/p/project-03/01-render-800.webp 800w, ../assets/p/project-03/01-render-1100.webp 1100w, ../assets/p/project-03/01-render.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="效果图"
+             width="1600" height="507" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">01</span>效果图</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c02">
+    <div class="chapter__rail">
+      <span class="chapter__no">02</span>
+      <h2 class="chapter__title">核心策略：灰空间串联的「聚场」</h2>
+    </div>
+    <p class="reveal">以灰空间为核心组织要素，连接大剧场、小剧场与学生活动中心三个功能体块。这些灰空间既是行走的路径，也是停留共享的场所——穿行与驻留的边界被有意做得模糊。三个体块不再彼此孤立，而是被一层架空的公共界面串成一个「聚场」：正式演出与非正式活动在此交织。</p>
+    <div class="chapter__key reveal">
+      <h4>形态逻辑：山的轮廓 → 屋面起伏 → 层叠屋顶 → 灰空间 → 底层架空</h4>
+      <p>形态模仿山的自然轮廓，屋面随功能体块高低起伏，形成层叠变化的屋顶。功能决定体块大小，界面策略统一；底层的灰空间让建筑像从校园地面上长出来，而不是强加在场地之上。</p>
+    </div>
+      <figure class="fig fig--wide reveal" data-fig="p03">
+        <img src="../assets/p/project-03/02-concept.webp" srcset="../assets/p/project-03/02-concept-800.webp 800w, ../assets/p/project-03/02-concept-1100.webp 1100w, ../assets/p/project-03/02-concept.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="概念分析、总平面图"
+             width="1600" height="843" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">02</span>概念分析、总平面图</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c03">
+    <div class="chapter__rail">
+      <span class="chapter__no">03</span>
+      <h2 class="chapter__title">人群需求与场地</h2>
+    </div>
+    <p class="reveal">四类人群各有诉求：快速通行的人群要通达便捷，日常活动的人群要导向识别与停留空间，观演集散的人群要足够的承载面积，事务服务的人群要交流开放又兼顾安静独立。设计不打算用四套分区去满足四种需求，而是让灰空间同时回应它们。</p>
+      <figure class="fig fig--wide reveal" data-fig="p03">
+        <img src="../assets/p/project-03/03-site.webp" srcset="../assets/p/project-03/03-site-800.webp 800w, ../assets/p/project-03/03-site-1100.webp 1100w, ../assets/p/project-03/03-site.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="场地分析"
+             width="1600" height="652" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">03</span>场地分析</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p03">
+        <img src="../assets/p/project-03/04-crowd.webp" srcset="../assets/p/project-03/04-crowd-800.webp 800w, ../assets/p/project-03/04-crowd-1100.webp 1100w, ../assets/p/project-03/04-crowd.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="人群需求"
+             width="1600" height="652" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">04</span>人群需求</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c04">
+    <div class="chapter__rail">
+      <span class="chapter__no">04</span>
+      <h2 class="chapter__title">形体生成与流线组织</h2>
+    </div>
+    <p class="reveal">流线分三类：公众（集散观演）、学生（日常活动）、观演（演出入场），三线在灰空间中交汇，又互不干扰。大剧场与小剧场均采用网架结构屋顶，实现大跨度无柱空间——结构不再需要落在观众厅中间。</p>
+    <div class="flow reveal">
+      <div class="flow__step">
+        <div class="flow__no">01</div>
+        <div class="flow__t">功能体量</div>
+        <div class="flow__d">大剧场 / 小剧场 / 活动中心三大体块落位</div>
+      </div>
+      <div class="flow__step">
+        <div class="flow__no">02</div>
+        <div class="flow__t">横向串联</div>
+        <div class="flow__d">灰空间带连接各功能体块</div>
+      </div>
+      <div class="flow__step">
+        <div class="flow__no">03</div>
+        <div class="flow__t">绿化天窗</div>
+        <div class="flow__d">屋顶绿化与天窗引入自然光</div>
+      </div>
+      <div class="flow__step">
+        <div class="flow__no">04</div>
+        <div class="flow__t">界面细化</div>
+        <div class="flow__d">体块精细化与材质界面统一</div>
+      </div>
+    </div>
+      <figure class="fig fig--wide reveal" data-fig="p03">
+        <img src="../assets/p/project-03/05-form.webp" srcset="../assets/p/project-03/05-form-800.webp 800w, ../assets/p/project-03/05-form-1100.webp 1100w, ../assets/p/project-03/05-form.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="形体生成"
+             width="1600" height="237" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">05</span>形体生成</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p03">
+        <img src="../assets/p/project-03/06-diagram.webp" srcset="../assets/p/project-03/06-diagram-800.webp 800w, ../assets/p/project-03/06-diagram-1100.webp 1100w, ../assets/p/project-03/06-diagram.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="总图分析"
+             width="1600" height="343" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">06</span>总图分析</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p03">
+        <img src="../assets/p/project-03/07-flow.webp" srcset="../assets/p/project-03/07-flow-800.webp 800w, ../assets/p/project-03/07-flow-1100.webp 1100w, ../assets/p/project-03/07-flow.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="流线分析、结构分析"
+             width="1600" height="1067" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">07</span>流线分析、结构分析</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c05">
+    <div class="chapter__rail">
+      <span class="chapter__no">05</span>
+      <h2 class="chapter__title">剧场技术与空间剖面</h2>
+    </div>
+    <p class="reveal">大剧场配置声桥、面光桥、吸声板、天幕边幕等专业设施，视线与声线都经过专门优化；小剧场靠座椅排布与声环境调整，适配话剧、歌舞剧、观影等多种演出。长卷剖透视完整展示从大剧场、小剧场到活动中心的空间连续关系。</p>
+      <figure class="fig fig--wide reveal" data-fig="p03">
+        <img src="../assets/p/project-03/08-bigtheater.webp" srcset="../assets/p/project-03/08-bigtheater-800.webp 800w, ../assets/p/project-03/08-bigtheater-1100.webp 1100w, ../assets/p/project-03/08-bigtheater.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="大剧场技术分析"
+             width="1600" height="978" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">08</span>大剧场技术分析</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p03">
+        <img src="../assets/p/project-03/09-smalltheater.webp" srcset="../assets/p/project-03/09-smalltheater-800.webp 800w, ../assets/p/project-03/09-smalltheater-1100.webp 1100w, ../assets/p/project-03/09-smalltheater.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="小剧场技术分析"
+             width="1600" height="1025" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">09</span>小剧场技术分析</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p03">
+        <img src="../assets/p/project-03/10-render2.webp" srcset="../assets/p/project-03/10-render2-800.webp 800w, ../assets/p/project-03/10-render2-1100.webp 1100w, ../assets/p/project-03/10-render2.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="效果图"
+             width="1600" height="1067" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">10</span>效果图</figcaption>
+      </figure>
+      <figure class="fig chapter__fig--out fig--scroll reveal" data-fig="p03">
+        <div class="fig__pan">
+        <img src="../assets/p/project-03/11-longsection.webp" srcset="../assets/p/project-03/11-longsection-800.webp 800w, ../assets/p/project-03/11-longsection-1100.webp 1100w, ../assets/p/project-03/11-longsection.webp 5000w" sizes="(max-width: 900px) 100vw, 68vw" alt="长剖效果图"
+             width="5000" height="666" loading="lazy" decoding="async">
+        </div>
+        <figcaption><span class="fig__no">11</span>长剖效果图</figcaption>
+      </figure>
+  </section>
+    </div>
+  </div>
+
+  <nav class="pager" aria-label="作品翻页">
+    <div class="pager__grid">
+      <a class="pager__item pager__item--prev" href="02.html">
+        <span class="pager__dir">← 上一个</span>
+        <span class="pager__title">浮光织隙，旧韵新结</span>
+        <span class="pager__type">乡村旧建改造</span>
+      </a>
+      <a class="pager__item pager__item--next" href="04.html">
+        <span class="pager__dir">下一个 →</span>
+        <span class="pager__title">旧檐新序</span>
+        <span class="pager__type">室内精细化设计</span>
+      </a>
+    </div>
+  </nav>
+
+</article>
+</main>
+
+<!-- 叠层观看：背景城市线稿 + 左侧章节索引 + 右侧标注 -->
+<div class="deck" aria-hidden="true">
+  <div class="deck__sky"></div>
+  <div class="deck__grid"></div>
+  <svg class="deck__city deck__city--l" viewBox="0 0 320 420" fill="none" aria-hidden="true"><path d="M-20 420V109h26V420" /><path d="M-7.0 117V414" opacity=".42" /><path d="M-16 127h18" opacity=".3" /><path d="M-16 157h18" opacity=".3" /><path d="M-16 187h18" opacity=".3" /><path d="M-16 217h18" opacity=".3" /><path d="M-16 247h18" opacity=".3" /><path d="M-16 277h18" opacity=".3" /><path d="M-16 307h18" opacity=".3" /><path d="M-16 337h18" opacity=".3" /><path d="M-16 367h18" opacity=".3" /><path d="M-16 397h18" opacity=".3" /><path d="M10 420V272h30V420" /><path d="M20.0 280V414" opacity=".42" /><path d="M30.0 280V414" opacity=".42" /><path d="M14 290h22" opacity=".3" /><path d="M14 320h22" opacity=".3" /><path d="M14 350h22" opacity=".3" /><path d="M14 380h22" opacity=".3" /><path d="M14 410h22" opacity=".3" /><path d="M42 420V271h30V420" /><path d="M52.0 279V414" opacity=".42" /><path d="M62.0 279V414" opacity=".42" /><path d="M46 289h22" opacity=".3" /><path d="M46 319h22" opacity=".3" /><path d="M46 349h22" opacity=".3" /><path d="M46 379h22" opacity=".3" /><path d="M46 409h22" opacity=".3" /><path d="M82 420V252h22V420" /><path d="M93.0 260V414" opacity=".42" /><path d="M86 270h14" opacity=".3" /><path d="M86 300h14" opacity=".3" /><path d="M86 330h14" opacity=".3" /><path d="M86 360h14" opacity=".3" /><path d="M86 390h14" opacity=".3" /><path d="M114 420V224h30V420" /><path d="M124.0 232V414" opacity=".42" /><path d="M134.0 232V414" opacity=".42" /><path d="M118 242h22" opacity=".3" /><path d="M118 272h22" opacity=".3" /><path d="M118 302h22" opacity=".3" /><path d="M118 332h22" opacity=".3" /><path d="M118 362h22" opacity=".3" /><path d="M118 392h22" opacity=".3" /><path d="M148 420V70h30V420" /><path d="M158.0 78V414" opacity=".42" /><path d="M168.0 78V414" opacity=".42" /><path d="M152 88h22" opacity=".3" /><path d="M152 118h22" opacity=".3" /><path d="M152 148h22" opacity=".3" /><path d="M152 178h22" opacity=".3" /><path d="M152 208h22" opacity=".3" /><path d="M152 238h22" opacity=".3" /><path d="M152 268h22" opacity=".3" /><path d="M152 298h22" opacity=".3" /><path d="M152 328h22" opacity=".3" /><path d="M152 358h22" opacity=".3" /><path d="M152 388h22" opacity=".3" /><path d="M188 420V356h34V420" /><path d="M199.3 364V414" opacity=".42" /><path d="M210.7 364V414" opacity=".42" /><path d="M192 374h26" opacity=".3" /><path d="M192 404h26" opacity=".3" /><path d="M232 420V164h30V420" /><path d="M242.0 172V414" opacity=".42" /><path d="M252.0 172V414" opacity=".42" /><path d="M236 182h22" opacity=".3" /><path d="M236 212h22" opacity=".3" /><path d="M236 242h22" opacity=".3" /><path d="M236 272h22" opacity=".3" /><path d="M236 302h22" opacity=".3" /><path d="M236 332h22" opacity=".3" /><path d="M236 362h22" opacity=".3" /><path d="M236 392h22" opacity=".3" /><path d="M264 420V100h34V420" /><path d="M275.3 108V414" opacity=".42" /><path d="M286.7 108V414" opacity=".42" /><path d="M268 118h26" opacity=".3" /><path d="M268 148h26" opacity=".3" /><path d="M268 178h26" opacity=".3" /><path d="M268 208h26" opacity=".3" /><path d="M268 238h26" opacity=".3" /><path d="M268 268h26" opacity=".3" /><path d="M268 298h26" opacity=".3" /><path d="M268 328h26" opacity=".3" /><path d="M268 358h26" opacity=".3" /><path d="M268 388h26" opacity=".3" /><path d="M300 420V217h22V420" /><path d="M311.0 225V414" opacity=".42" /><path d="M304 235h14" opacity=".3" /><path d="M304 265h14" opacity=".3" /><path d="M304 295h14" opacity=".3" /><path d="M304 325h14" opacity=".3" /><path d="M304 355h14" opacity=".3" /><path d="M304 385h14" opacity=".3" /><path d="M332 420V209h34V420" /><path d="M343.3 217V414" opacity=".42" /><path d="M354.7 217V414" opacity=".42" /><path d="M336 227h26" opacity=".3" /><path d="M336 257h26" opacity=".3" /><path d="M336 287h26" opacity=".3" /><path d="M336 317h26" opacity=".3" /><path d="M336 347h26" opacity=".3" /><path d="M336 377h26" opacity=".3" /><path d="M336 407h26" opacity=".3" /></svg>
+  <svg class="deck__city deck__city--r" viewBox="0 0 320 420" fill="none" aria-hidden="true"><g transform="translate(320 0) scale(-1 1)"><path d="M-20 420V324h22V420" /><path d="M-9.0 332V414" opacity=".42" /><path d="M-16 342h14" opacity=".3" /><path d="M-16 372h14" opacity=".3" /><path d="M-16 402h14" opacity=".3" /><path d="M8 420V76h26V420" /><path d="M21.0 84V414" opacity=".42" /><path d="M12 94h18" opacity=".3" /><path d="M12 124h18" opacity=".3" /><path d="M12 154h18" opacity=".3" /><path d="M12 184h18" opacity=".3" /><path d="M12 214h18" opacity=".3" /><path d="M12 244h18" opacity=".3" /><path d="M12 274h18" opacity=".3" /><path d="M12 304h18" opacity=".3" /><path d="M12 334h18" opacity=".3" /><path d="M12 364h18" opacity=".3" /><path d="M12 394h18" opacity=".3" /><path d="M36 420V320h34V420" /><path d="M47.3 328V414" opacity=".42" /><path d="M58.7 328V414" opacity=".42" /><path d="M40 338h26" opacity=".3" /><path d="M40 368h26" opacity=".3" /><path d="M40 398h26" opacity=".3" /><path d="M74 420V292h26V420" /><path d="M87.0 300V414" opacity=".42" /><path d="M78 310h18" opacity=".3" /><path d="M78 340h18" opacity=".3" /><path d="M78 370h18" opacity=".3" /><path d="M78 400h18" opacity=".3" /><path d="M102 420V324h26V420" /><path d="M115.0 332V414" opacity=".42" /><path d="M106 342h18" opacity=".3" /><path d="M106 372h18" opacity=".3" /><path d="M106 402h18" opacity=".3" /><path d="M130 420V115h30V420" /><path d="M140.0 123V414" opacity=".42" /><path d="M150.0 123V414" opacity=".42" /><path d="M134 133h22" opacity=".3" /><path d="M134 163h22" opacity=".3" /><path d="M134 193h22" opacity=".3" /><path d="M134 223h22" opacity=".3" /><path d="M134 253h22" opacity=".3" /><path d="M134 283h22" opacity=".3" /><path d="M134 313h22" opacity=".3" /><path d="M134 343h22" opacity=".3" /><path d="M134 373h22" opacity=".3" /><path d="M134 403h22" opacity=".3" /><path d="M164 420V330h26V420" /><path d="M177.0 338V414" opacity=".42" /><path d="M168 348h18" opacity=".3" /><path d="M168 378h18" opacity=".3" /><path d="M168 408h18" opacity=".3" /><path d="M192 420V168h30V420" /><path d="M202.0 176V414" opacity=".42" /><path d="M212.0 176V414" opacity=".42" /><path d="M196 186h22" opacity=".3" /><path d="M196 216h22" opacity=".3" /><path d="M196 246h22" opacity=".3" /><path d="M196 276h22" opacity=".3" /><path d="M196 306h22" opacity=".3" /><path d="M196 336h22" opacity=".3" /><path d="M196 366h22" opacity=".3" /><path d="M196 396h22" opacity=".3" /><path d="M228 420V256h30V420" /><path d="M238.0 264V414" opacity=".42" /><path d="M248.0 264V414" opacity=".42" /><path d="M232 274h22" opacity=".3" /><path d="M232 304h22" opacity=".3" /><path d="M232 334h22" opacity=".3" /><path d="M232 364h22" opacity=".3" /><path d="M232 394h22" opacity=".3" /><path d="M260 420V214h30V420" /><path d="M270.0 222V414" opacity=".42" /><path d="M280.0 222V414" opacity=".42" /><path d="M264 232h22" opacity=".3" /><path d="M264 262h22" opacity=".3" /><path d="M264 292h22" opacity=".3" /><path d="M264 322h22" opacity=".3" /><path d="M264 352h22" opacity=".3" /><path d="M264 382h22" opacity=".3" /><path d="M264 412h22" opacity=".3" /><path d="M294 420V293h22V420" /><path d="M305.0 301V414" opacity=".42" /><path d="M298 311h14" opacity=".3" /><path d="M298 341h14" opacity=".3" /><path d="M298 371h14" opacity=".3" /><path d="M298 401h14" opacity=".3" /><path d="M322 420V136h34V420" /><path d="M333.3 144V414" opacity=".42" /><path d="M344.7 144V414" opacity=".42" /><path d="M326 154h26" opacity=".3" /><path d="M326 184h26" opacity=".3" /><path d="M326 214h26" opacity=".3" /><path d="M326 244h26" opacity=".3" /><path d="M326 274h26" opacity=".3" /><path d="M326 304h26" opacity=".3" /><path d="M326 334h26" opacity=".3" /><path d="M326 364h26" opacity=".3" /><path d="M326 394h26" opacity=".3" /></g></svg>
+  <div class="deck__vig"></div>
+</div>
+
+<nav class="decknav" aria-label="章节索引">
+  <p class="decknav__t">山间·聚场<i>Mountain Gathering</i></p>
+  <a href="#c01"><b>01</b>设计命题</a>
+  <a href="#c02"><b>02</b>核心策略：灰空间串联的「聚场」</a>
+  <a href="#c03"><b>03</b>人群需求与场地</a>
+  <a href="#c04"><b>04</b>形体生成与流线组织</a>
+  <a href="#c05"><b>05</b>剧场技术与空间剖面</a>
+</nav>
+
+<div class="deckmeta" aria-hidden="true">
+  <p class="deckmeta__k">校园剧场设计</p>
+  <p class="deckmeta__v">03 — 山间·聚场</p>
+  <span class="deckmeta__line"></span>
+</div>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© 2026 杨官运</span>
+    <a href="mailto:gyyangmail@163.com">gyyangmail@163.com</a>
+    <a href="../index.html">回到目录 ↑</a>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="图片查看" hidden>
+  <button class="lightbox__close" type="button" aria-label="关闭">×</button>
+  <button class="lightbox__prev" type="button" aria-label="上一张">‹</button>
+  <button class="lightbox__next" type="button" aria-label="下一张">›</button>
+  <figure class="lightbox__stage">
+    <img id="lightboxImg" src="" alt="">
+  </figure>
+  <p class="lightbox__cap" id="lightboxCap"></p>
+</div>
+
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>

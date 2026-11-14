@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>浮光织隙，旧韵新结 — 杨官运</title>
+<meta name="description" content="浮光织隙，旧韵新结 · 基于「研学＋旅游＋农业」三产业融合的乡村更新设计 — 杨官运建筑设计作品。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="浮光织隙，旧韵新结 — 杨官运">
+<meta property="og:image" content="../assets/p/project-02/01-cover.webp">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2316140f'/%3E%3Ctext x='16' y='23' font-size='17' fill='%23f7f5f1' text-anchor='middle' font-family='Georgia,serif'%3E%E6%9D%A8%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/css/style.css">
+
+<!-- 落地页的第一帧：如果是从目录点进来的，趁解析时就把那张封面盖上，
+     避免"新文档先白一下、再出现遮罩"造成的停顿感 -->
+<script>
+  (function () {
+    try {
+      var raw = sessionStorage.getItem('dsh-transit');
+      if (!raw) return;
+      sessionStorage.removeItem('dsh-transit');
+      var d = JSON.parse(raw);
+      if (!d || d.no !== '02' || !d.src) return;
+      var v = document.createElement('div');
+      v.id = 'arrive';
+      v.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#f6f1e7;' +
+        'opacity:1;transition:opacity .34s ease .04s;pointer-events:none';
+      v.innerHTML = '<img alt="" src="' + d.src + '" style="width:100%;height:100%;object-fit:cover">';
+      (document.documentElement).appendChild(v);
+      window.__arriveAt = Date.now();
+      addEventListener('load', function () {
+        setTimeout(function () {
+          v.style.opacity = '0';
+          setTimeout(function () { v.remove(); }, 800);
+        }, 60);
+      });
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body class="page-work" data-no="02" style="--accent:#59602f; --deck-bg:#101208; --deck-glow:#3a3c1c">
+
+<script>
+  (function () {
+    document.documentElement.classList.add('js');
+    setTimeout(function () {
+      if (window.__revealReady) return;
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
+    }, 1500);
+  })();
+</script>
+
+<a class="skip" href="#main">跳到内容</a>
+
+<header class="site-head" id="siteHead">
+  <a class="brand" href="../index.html">
+    <span class="brand__cn">杨官运</span>
+    <span class="brand__en">YANG GUANYUN</span>
+  </a>
+  <div class="head-right">
+    <span class="head-count">02 / 06</span>
+    <nav class="head-nav" aria-label="主导航">
+      <a href="../index.html">目录</a>
+      <a href="../about.html">关于</a>
+    </nav>
+    <button class="viewswitch" id="viewSwitch" type="button" aria-pressed="false">
+      <span class="viewswitch__i" aria-hidden="true"></span>
+      <span class="viewswitch__t">叠层</span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+<article class="work">
+
+  <header class="work__hero">
+    <img src="../assets/p/project-02/01-cover.webp"
+         srcset="../assets/p/project-02/01-cover-800.webp 800w, ../assets/p/project-02/01-cover-1100.webp 1100w, ../assets/p/project-02/01-cover.webp 1600w"
+         sizes="100vw" alt="浮光织隙，旧韵新结 主视觉"
+         width="1600" height="900" fetchpriority="high" decoding="async">
+    <div class="work__scrim" aria-hidden="true"></div>
+    <div class="work__head">
+      <div class="wrap">
+        <p class="work__kicker"><span class="work__no">02</span><span class="work__type">乡村旧建改造</span></p>
+        <h1 class="work__title">浮光织隙，旧韵新结</h1>
+        <p class="work__en">Woven Light, New Knots</p>
+        <p class="work__sub">基于「研学＋旅游＋农业」三产业融合的乡村更新设计</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <dl class="work__spec">
+      <div><dt>地点</dt><dd>重庆市沙坪坝区中梁镇</dd></div>
+      <div><dt>面积</dt><dd>3,728 ㎡</dd></div>
+      <div><dt>年份</dt><dd>2025.06</dd></div>
+      <div><dt>团队</dt><dd>杨官运、王一凡</dd></div>
+      <div><dt>来源</dt><dd>大三下课程作业</dd></div>
+      <div><dt>指导</dt><dd>孙天明</dd></div>
+      <div><dt>参与</dt><dd>前期分析、方案设计、3D 建模、部分工程图、渲染、后期处理</dd></div>
+      <div><dt>获奖</dt><dd>第十六届园冶杯大学生国际竞赛 三等奖</dd></div>
+    </dl>
+
+    <p class="work__lede">不搞大拆大建，而是在原有村落肌理上做「织补」——留下能接回街巷的，拆掉接不回的。</p>
+
+    <div class="work__body">
+  <section class="chapter" id="c01">
+    <div class="chapter__rail">
+      <span class="chapter__no">01</span>
+      <h2 class="chapter__title">设计背景与问题</h2>
+    </div>
+    <p class="reveal">场地位于沙坪坝区中梁镇石院村与龙泉村的交界处，以灿若湖为核心。这里兼具乡村的原生性与城市近郊的可达性，但要面对青年人口外流、传统农业附加值低、空间闲置与城市消费需求之间的错配。一个普通的西南村落，怎么变成城市人群愿意周末前来、在地村民也能参与的地方？</p>
+      <figure class="fig fig--wide reveal" data-fig="p02">
+        <img src="../assets/p/project-02/01-nearby.webp" srcset="../assets/p/project-02/01-nearby-800.webp 800w, ../assets/p/project-02/01-nearby-1100.webp 1100w, ../assets/p/project-02/01-nearby.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="周边分析"
+             width="1600" height="649" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">01</span>周边分析</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c02">
+    <div class="chapter__rail">
+      <span class="chapter__no">02</span>
+      <h2 class="chapter__title">核心策略：三产融合的乡村更新</h2>
+    </div>
+    <p class="reveal">以「特色农业＋景观旅游＋研学基地」三产融合为路径，围绕灿若湖形成「一心一环四区」——湖是景观核心，环湖步道串起游客集散区、研学实践区、商业发展区与山林体验区。从现状问题出发，经产业基础与资源禀赋分析，确立「生态优先、三产融合、文化赋能」三条原则。</p>
+    <div class="chapter__key reveal">
+      <h4>设计逻辑链：人 · 物 · 未来 → 目标定位 → 关键要素 → 设计原则 → 愿景</h4>
+      <p>不搞大拆大建，而是在原有村落肌理上做「织补」——保留有价值的老建筑，拆除结构危险的违建，新建符合现代功能的公共建筑，用廊道和游线把新旧空间串成整体。</p>
+    </div>
+      <figure class="fig fig--wide reveal" data-fig="p02">
+        <img src="../assets/p/project-02/02-strategy.webp" srcset="../assets/p/project-02/02-strategy-800.webp 800w, ../assets/p/project-02/02-strategy-1100.webp 1100w, ../assets/p/project-02/02-strategy.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="设计策略、政策指导"
+             width="1600" height="1063" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">02</span>设计策略、政策指导</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c03">
+    <div class="chapter__rail">
+      <span class="chapter__no">03</span>
+      <h2 class="chapter__title">场地与周边分析</h2>
+    </div>
+    <p class="reveal">场地处在城区与乡村的交界，西靠中梁镇，东邻大学城。嘉陵江滨江路与城市快速路可达；自然资源有中梁山脉与灿若湖水系；文旅资源包括曾家院子、古屋场等传统村落节点。把这些放在一张图上看，能看出村落真正的价值不在单栋房子，而在湖、田、林、路之间的关系。</p>
+      <figure class="fig fig--wide reveal" data-fig="p02">
+        <img src="../assets/p/project-02/03-location.webp" srcset="../assets/p/project-02/03-location-800.webp 800w, ../assets/p/project-02/03-location-1100.webp 1100w, ../assets/p/project-02/03-location.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="区位分析"
+             width="1600" height="1067" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">03</span>区位分析</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p02">
+        <img src="../assets/p/project-02/04-bank.webp" srcset="../assets/p/project-02/04-bank-800.webp 800w, ../assets/p/project-02/04-bank-1100.webp 1100w, ../assets/p/project-02/04-bank.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="驳岸分析"
+             width="1600" height="559" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">04</span>驳岸分析</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p02">
+        <img src="../assets/p/project-02/05-industry.webp" srcset="../assets/p/project-02/05-industry-800.webp 800w, ../assets/p/project-02/05-industry-1100.webp 1100w, ../assets/p/project-02/05-industry.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="产业分析"
+             width="1600" height="1017" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">05</span>产业分析</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c04">
+    <div class="chapter__rail">
+      <span class="chapter__no">04</span>
+      <h2 class="chapter__title">总体规划与产业植入</h2>
+    </div>
+    <p class="reveal">游客集散中心承担入口服务，环湖步道串联景观农业轮作田、研学基地、农场与果林，花溪渔隐民宿沿湖岸布置。产业上以种植为基础（油菜花、向日葵等景观作物），加工为补充，文旅与研学作引导——一条「农业＋加工＋旅游」的链条，让村民能在自家门口参与租金之外的收入。</p>
+      <figure class="fig fig--wide reveal" data-fig="p02">
+        <img src="../assets/p/project-02/06-masterplan.webp" srcset="../assets/p/project-02/06-masterplan-800.webp 800w, ../assets/p/project-02/06-masterplan-1100.webp 1100w, ../assets/p/project-02/06-masterplan.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="总体规划、效果图"
+             width="1600" height="1067" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">06</span>总体规划、效果图</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p02">
+        <img src="../assets/p/project-02/07-plan2.webp" srcset="../assets/p/project-02/07-plan2-800.webp 800w, ../assets/p/project-02/07-plan2-1100.webp 1100w, ../assets/p/project-02/07-plan2.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="二层平面图"
+             width="1600" height="1051" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">07</span>二层平面图</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c05">
+    <div class="chapter__rail">
+      <span class="chapter__no">05</span>
+      <h2 class="chapter__title">旧建筑更新策略</h2>
+    </div>
+    <p class="reveal">场地内共 13 栋建筑。拆建依据不是「新旧」，而是建筑肌理：1、6、13 号全部拆除重建，其余 10 栋保留改造，另新建一栋公共建筑——跨度更大、空间更通透，与原有的紧凑肌理形成对比。</p>
+    <p class="reveal">手法分三类：「新（补）」补全公共功能缺口；「织（廊）」用廊道串联新旧，形成连续步道；「旧（留）」保留原有风貌、改造内部功能。落到细部是屋顶平坡变化、外廊加建、屋面平台与庭院重构。</p>
+      <figure class="fig fig--wide reveal" data-fig="p02">
+        <img src="../assets/p/project-02/08-axo.webp" srcset="../assets/p/project-02/08-axo-800.webp 800w, ../assets/p/project-02/08-axo-1100.webp 1100w, ../assets/p/project-02/08-axo.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="轴测分解"
+             width="1600" height="1050" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">08</span>轴测分解</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p02">
+        <img src="../assets/p/project-02/09-renewal.webp" srcset="../assets/p/project-02/09-renewal-800.webp 800w, ../assets/p/project-02/09-renewal-1100.webp 1100w, ../assets/p/project-02/09-renewal.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="改造策略"
+             width="1600" height="785" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">09</span>改造策略</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c06">
+    <div class="chapter__rail">
+      <span class="chapter__no">06</span>
+      <h2 class="chapter__title">政策对接与愿景</h2>
+    </div>
+    <p class="reveal">国家乡村振兴战略与重庆乡村建设行动是这一轮更新的上位依据。落到图上其实只有三件事：屋顶的平坡变化、外廊的加建、庭院的重构——尽量少动承重墙，让村子在原有的尺度里继续生长。</p>
+      <figure class="fig chapter__fig--out fig--scroll reveal" data-fig="p02">
+        <div class="fig__pan">
+        <img src="../assets/p/project-02/10-section.webp" srcset="../assets/p/project-02/10-section-800.webp 800w, ../assets/p/project-02/10-section-1100.webp 1100w, ../assets/p/project-02/10-section.webp 7016w" sizes="(max-width: 900px) 100vw, 68vw" alt="立剖"
+             width="7016" height="710" loading="lazy" decoding="async">
+        </div>
+        <figcaption><span class="fig__no">10</span>立剖</figcaption>
+      </figure>
+  </section>
+    </div>
+  </div>
+
+  <nav class="pager" aria-label="作品翻页">
+    <div class="pager__grid">
+      <a class="pager__item pager__item--prev" href="01.html">
+        <span class="pager__dir">← 上一个</span>
+        <span class="pager__title">叠浮绿境</span>
+        <span class="pager__type">高层办公建筑设计</span>
+      </a>
+      <a class="pager__item pager__item--next" href="03.html">
+        <span class="pager__dir">下一个 →</span>
+        <span class="pager__title">山间·聚场</span>
+        <span class="pager__type">校园剧场设计</span>
+      </a>
+    </div>
+  </nav>
+
+</article>
+</main>
+
+<!-- 叠层观看：背景城市线稿 + 左侧章节索引 + 右侧标注 -->
+<div class="deck" aria-hidden="true">
+  <div class="deck__sky"></div>
+  <div class="deck__grid"></div>
+  <svg class="deck__city deck__city--l" viewBox="0 0 320 420" fill="none" aria-hidden="true"><path d="M-20 420V259h22V420" /><path d="M-9.0 267V414" opacity=".42" /><path d="M-16 277h14" opacity=".3" /><path d="M-16 307h14" opacity=".3" /><path d="M-16 337h14" opacity=".3" /><path d="M-16 367h14" opacity=".3" /><path d="M-16 397h14" opacity=".3" /><path d="M12 420V212h30V420" /><path d="M22.0 220V414" opacity=".42" /><path d="M32.0 220V414" opacity=".42" /><path d="M16 230h22" opacity=".3" /><path d="M16 260h22" opacity=".3" /><path d="M16 290h22" opacity=".3" /><path d="M16 320h22" opacity=".3" /><path d="M16 350h22" opacity=".3" /><path d="M16 380h22" opacity=".3" /><path d="M16 410h22" opacity=".3" /><path d="M46 420V215h30V420" /><path d="M56.0 223V414" opacity=".42" /><path d="M66.0 223V414" opacity=".42" /><path d="M50 233h22" opacity=".3" /><path d="M50 263h22" opacity=".3" /><path d="M50 293h22" opacity=".3" /><path d="M50 323h22" opacity=".3" /><path d="M50 353h22" opacity=".3" /><path d="M50 383h22" opacity=".3" /><path d="M50 413h22" opacity=".3" /><path d="M78 420V213h40V420" /><path d="M88.0 221V414" opacity=".42" /><path d="M98.0 221V414" opacity=".42" /><path d="M108.0 221V414" opacity=".42" /><path d="M82 231h32" opacity=".3" /><path d="M82 261h32" opacity=".3" /><path d="M82 291h32" opacity=".3" /><path d="M82 321h32" opacity=".3" /><path d="M82 351h32" opacity=".3" /><path d="M82 381h32" opacity=".3" /><path d="M82 411h32" opacity=".3" /><path d="M128 420V329h22V420" /><path d="M139.0 337V414" opacity=".42" /><path d="M132 347h14" opacity=".3" /><path d="M132 377h14" opacity=".3" /><path d="M132 407h14" opacity=".3" /><path d="M152 420V73h40V420" /><path d="M162.0 81V414" opacity=".42" /><path d="M172.0 81V414" opacity=".42" /><path d="M182.0 81V414" opacity=".42" /><path d="M156 91h32" opacity=".3" /><path d="M156 121h32" opacity=".3" /><path d="M156 151h32" opacity=".3" /><path d="M156 181h32" opacity=".3" /><path d="M156 211h32" opacity=".3" /><path d="M156 241h32" opacity=".3" /><path d="M156 271h32" opacity=".3" /><path d="M156 301h32" opacity=".3" /><path d="M156 331h32" opacity=".3" /><path d="M156 361h32" opacity=".3" /><path d="M156 391h32" opacity=".3" /><path d="M202 420V134h26V420" /><path d="M215.0 142V414" opacity=".42" /><path d="M206 152h18" opacity=".3" /><path d="M206 182h18" opacity=".3" /><path d="M206 212h18" opacity=".3" /><path d="M206 242h18" opacity=".3" /><path d="M206 272h18" opacity=".3" /><path d="M206 302h18" opacity=".3" /><path d="M206 332h18" opacity=".3" /><path d="M206 362h18" opacity=".3" /><path d="M206 392h18" opacity=".3" /><path d="M234 420V206h22V420" /><path d="M245.0 214V414" opacity=".42" /><path d="M238 224h14" opacity=".3" /><path d="M238 254h14" opacity=".3" /><path d="M238 284h14" opacity=".3" /><path d="M238 314h14" opacity=".3" /><path d="M238 344h14" opacity=".3" /><path d="M238 374h14" opacity=".3" /><path d="M238 404h14" opacity=".3" /><path d="M266 420V255h22V420" /><path d="M277.0 263V414" opacity=".42" /><path d="M270 273h14" opacity=".3" /><path d="M270 303h14" opacity=".3" /><path d="M270 333h14" opacity=".3" /><path d="M270 363h14" opacity=".3" /><path d="M270 393h14" opacity=".3" /><path d="M294 420V271h40V420" /><path d="M304.0 279V414" opacity=".42" /><path d="M314.0 279V414" opacity=".42" /><path d="M324.0 279V414" opacity=".42" /><path d="M298 289h32" opacity=".3" /><path d="M298 319h32" opacity=".3" /><path d="M298 349h32" opacity=".3" /><path d="M298 379h32" opacity=".3" /><path d="M298 409h32" opacity=".3" /><path d="M338 420V343h22V420" /><path d="M349.0 351V414" opacity=".42" /><path d="M342 361h14" opacity=".3" /><path d="M342 391h14" opacity=".3" /></svg>
+  <svg class="deck__city deck__city--r" viewBox="0 0 320 420" fill="none" aria-hidden="true"><g transform="translate(320 0) scale(-1 1)"><path d="M-20 420V237h34V420" /><path d="M-8.7 245V414" opacity=".42" /><path d="M2.6999999999999993 245V414" opacity=".42" /><path d="M-16 255h26" opacity=".3" /><path d="M-16 285h26" opacity=".3" /><path d="M-16 315h26" opacity=".3" /><path d="M-16 345h26" opacity=".3" /><path d="M-16 375h26" opacity=".3" /><path d="M-16 405h26" opacity=".3" /><path d="M16 420V214h40V420" /><path d="M26.0 222V414" opacity=".42" /><path d="M36.0 222V414" opacity=".42" /><path d="M46.0 222V414" opacity=".42" /><path d="M20 232h32" opacity=".3" /><path d="M20 262h32" opacity=".3" /><path d="M20 292h32" opacity=".3" /><path d="M20 322h32" opacity=".3" /><path d="M20 352h32" opacity=".3" /><path d="M20 382h32" opacity=".3" /><path d="M20 412h32" opacity=".3" /><path d="M60 420V294h34V420" /><path d="M71.3 302V414" opacity=".42" /><path d="M82.7 302V414" opacity=".42" /><path d="M64 312h26" opacity=".3" /><path d="M64 342h26" opacity=".3" /><path d="M64 372h26" opacity=".3" /><path d="M64 402h26" opacity=".3" /><path d="M100 420V109h30V420" /><path d="M110.0 117V414" opacity=".42" /><path d="M120.0 117V414" opacity=".42" /><path d="M104 127h22" opacity=".3" /><path d="M104 157h22" opacity=".3" /><path d="M104 187h22" opacity=".3" /><path d="M104 217h22" opacity=".3" /><path d="M104 247h22" opacity=".3" /><path d="M104 277h22" opacity=".3" /><path d="M104 307h22" opacity=".3" /><path d="M104 337h22" opacity=".3" /><path d="M104 367h22" opacity=".3" /><path d="M104 397h22" opacity=".3" /><path d="M134 420V93h30V420" /><path d="M144.0 101V414" opacity=".42" /><path d="M154.0 101V414" opacity=".42" /><path d="M138 111h22" opacity=".3" /><path d="M138 141h22" opacity=".3" /><path d="M138 171h22" opacity=".3" /><path d="M138 201h22" opacity=".3" /><path d="M138 231h22" opacity=".3" /><path d="M138 261h22" opacity=".3" /><path d="M138 291h22" opacity=".3" /><path d="M138 321h22" opacity=".3" /><path d="M138 351h22" opacity=".3" /><path d="M138 381h22" opacity=".3" /><path d="M138 411h22" opacity=".3" /><path d="M166 420V75h22V420" /><path d="M177.0 83V414" opacity=".42" /><path d="M170 93h14" opacity=".3" /><path d="M170 123h14" opacity=".3" /><path d="M170 153h14" opacity=".3" /><path d="M170 183h14" opacity=".3" /><path d="M170 213h14" opacity=".3" /><path d="M170 243h14" opacity=".3" /><path d="M170 273h14" opacity=".3" /><path d="M170 303h14" opacity=".3" /><path d="M170 333h14" opacity=".3" /><path d="M170 363h14" opacity=".3" /><path d="M170 393h14" opacity=".3" /><path d="M198 420V204h30V420" /><path d="M208.0 212V414" opacity=".42" /><path d="M218.0 212V414" opacity=".42" /><path d="M202 222h22" opacity=".3" /><path d="M202 252h22" opacity=".3" /><path d="M202 282h22" opacity=".3" /><path d="M202 312h22" opacity=".3" /><path d="M202 342h22" opacity=".3" /><path d="M202 372h22" opacity=".3" /><path d="M202 402h22" opacity=".3" /><path d="M232 420V250h26V420" /><path d="M245.0 258V414" opacity=".42" /><path d="M236 268h18" opacity=".3" /><path d="M236 298h18" opacity=".3" /><path d="M236 328h18" opacity=".3" /><path d="M236 358h18" opacity=".3" /><path d="M236 388h18" opacity=".3" /><path d="M264 420V278h30V420" /><path d="M274.0 286V414" opacity=".42" /><path d="M284.0 286V414" opacity=".42" /><path d="M268 296h22" opacity=".3" /><path d="M268 326h22" opacity=".3" /><path d="M268 356h22" opacity=".3" /><path d="M268 386h22" opacity=".3" /><path d="M300 420V174h34V420" /><path d="M311.3 182V414" opacity=".42" /><path d="M322.7 182V414" opacity=".42" /><path d="M304 192h26" opacity=".3" /><path d="M304 222h26" opacity=".3" /><path d="M304 252h26" opacity=".3" /><path d="M304 282h26" opacity=".3" /><path d="M304 312h26" opacity=".3" /><path d="M304 342h26" opacity=".3" /><path d="M304 372h26" opacity=".3" /><path d="M304 402h26" opacity=".3" /><path d="M338 420V60h40V420" /><path d="M348.0 68V414" opacity=".42" /><path d="M358.0 68V414" opacity=".42" /><path d="M368.0 68V414" opacity=".42" /><path d="M342 78h32" opacity=".3" /><path d="M342 108h32" opacity=".3" /><path d="M342 138h32" opacity=".3" /><path d="M342 168h32" opacity=".3" /><path d="M342 198h32" opacity=".3" /><path d="M342 228h32" opacity=".3" /><path d="M342 258h32" opacity=".3" /><path d="M342 288h32" opacity=".3" /><path d="M342 318h32" opacity=".3" /><path d="M342 348h32" opacity=".3" /><path d="M342 378h32" opacity=".3" /><path d="M342 408h32" opacity=".3" /></g></svg>
+  <div class="deck__vig"></div>
+</div>
+
+<nav class="decknav" aria-label="章节索引">
+  <p class="decknav__t">浮光织隙，旧韵新结<i>Woven Light, New Knots</i></p>
+  <a href="#c01"><b>01</b>设计背景与问题</a>
+  <a href="#c02"><b>02</b>核心策略：三产融合的乡村更新</a>
+  <a href="#c03"><b>03</b>场地与周边分析</a>
+  <a href="#c04"><b>04</b>总体规划与产业植入</a>
+  <a href="#c05"><b>05</b>旧建筑更新策略</a>
+  <a href="#c06"><b>06</b>政策对接与愿景</a>
+</nav>
+
+<div class="deckmeta" aria-hidden="true">
+  <p class="deckmeta__k">乡村旧建改造</p>
+  <p class="deckmeta__v">02 — 浮光织隙，旧韵新结</p>
+  <span class="deckmeta__line"></span>
+</div>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© 2026 杨官运</span>
+    <a href="mailto:gyyangmail@163.com">gyyangmail@163.com</a>
+    <a href="../index.html">回到目录 ↑</a>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="图片查看" hidden>
+  <button class="lightbox__close" type="button" aria-label="关闭">×</button>
+  <button class="lightbox__prev" type="button" aria-label="上一张">‹</button>
+  <button class="lightbox__next" type="button" aria-label="下一张">›</button>
+  <figure class="lightbox__stage">
+    <img id="lightboxImg" src="" alt="">
+  </figure>
+  <p class="lightbox__cap" id="lightboxCap"></p>
+</div>
+
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>

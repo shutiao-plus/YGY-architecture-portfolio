@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>旧檐新序 — 杨官运</title>
+<meta name="description" content="旧檐新序 · 作为生活胶片的乡村适老化空间重构 — 杨官运建筑设计作品。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="旧檐新序 — 杨官运">
+<meta property="og:image" content="../assets/p/project-04/01-cover.webp">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2316140f'/%3E%3Ctext x='16' y='23' font-size='17' fill='%23f7f5f1' text-anchor='middle' font-family='Georgia,serif'%3E%E6%9D%A8%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/css/style.css">
+
+<!-- 落地页的第一帧：如果是从目录点进来的，趁解析时就把那张封面盖上，
+     避免"新文档先白一下、再出现遮罩"造成的停顿感 -->
+<script>
+  (function () {
+    try {
+      var raw = sessionStorage.getItem('dsh-transit');
+      if (!raw) return;
+      sessionStorage.removeItem('dsh-transit');
+      var d = JSON.parse(raw);
+      if (!d || d.no !== '04' || !d.src) return;
+      var v = document.createElement('div');
+      v.id = 'arrive';
+      v.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#f6f1e7;' +
+        'opacity:1;transition:opacity .34s ease .04s;pointer-events:none';
+      v.innerHTML = '<img alt="" src="' + d.src + '" style="width:100%;height:100%;object-fit:cover">';
+      (document.documentElement).appendChild(v);
+      window.__arriveAt = Date.now();
+      addEventListener('load', function () {
+        setTimeout(function () {
+          v.style.opacity = '0';
+          setTimeout(function () { v.remove(); }, 800);
+        }, 60);
+      });
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body class="page-work" data-no="04" style="--accent:#7b4a2e; --deck-bg:#150e09; --deck-glow:#4a2c1a">
+
+<script>
+  (function () {
+    document.documentElement.classList.add('js');
+    setTimeout(function () {
+      if (window.__revealReady) return;
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
+    }, 1500);
+  })();
+</script>
+
+<a class="skip" href="#main">跳到内容</a>
+
+<header class="site-head" id="siteHead">
+  <a class="brand" href="../index.html">
+    <span class="brand__cn">杨官运</span>
+    <span class="brand__en">YANG GUANYUN</span>
+  </a>
+  <div class="head-right">
+    <span class="head-count">04 / 06</span>
+    <nav class="head-nav" aria-label="主导航">
+      <a href="../index.html">目录</a>
+      <a href="../about.html">关于</a>
+    </nav>
+    <button class="viewswitch" id="viewSwitch" type="button" aria-pressed="false">
+      <span class="viewswitch__i" aria-hidden="true"></span>
+      <span class="viewswitch__t">叠层</span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+<article class="work">
+
+  <header class="work__hero">
+    <img src="../assets/p/project-04/01-cover.webp"
+         srcset="../assets/p/project-04/01-cover-800.webp 800w, ../assets/p/project-04/01-cover-1100.webp 1100w, ../assets/p/project-04/01-cover.webp 1600w"
+         sizes="100vw" alt="旧檐新序 主视觉"
+         width="1600" height="900" fetchpriority="high" decoding="async">
+    <div class="work__scrim" aria-hidden="true"></div>
+    <div class="work__head">
+      <div class="wrap">
+        <p class="work__kicker"><span class="work__no">04</span><span class="work__type">室内精细化设计</span></p>
+        <h1 class="work__title">旧檐新序</h1>
+        <p class="work__en">New Order Beneath Old Eaves</p>
+        <p class="work__sub">作为生活胶片的乡村适老化空间重构</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <dl class="work__spec">
+      <div><dt>地点</dt><dd>云南省曲靖市马龙区</dd></div>
+      <div><dt>面积</dt><dd>122.7 ㎡</dd></div>
+      <div><dt>年份</dt><dd>2024.12</dd></div>
+      <div><dt>团队</dt><dd>杨官运、王一凡</dd></div>
+      <div><dt>来源</dt><dd>大三上课程作业</dd></div>
+      <div><dt>指导</dt><dd>田琦</dd></div>
+      <div><dt>参与</dt><dd>前期分析、方案构思、3D 建模、部分工程图、渲染、后期处理</dd></div>
+      <div><dt>获奖</dt><dd>2024 年首届居家适老化改造设计创新大赛 入围奖</dd></div>
+    </dl>
+
+    <p class="work__lede">122.7 平方米，一家三代六口人。把老人一天的生活切成胶片，再按帧重组空间。</p>
+
+    <div class="work__body">
+  <section class="chapter" id="c01">
+    <div class="chapter__rail">
+      <span class="chapter__no">01</span>
+      <h2 class="chapter__title">设计命题</h2>
+    </div>
+    <p class="reveal">西南农村住宅的典型困境：代际合住却缺乏分区，老年人的空间不适老，青年假期返乡又局促。这不是一栋房子的问题，而是三代人如何在有限面积里共处。设计对象是云南曲靖马龙区一栋两层农村住宅，建筑面积只有 122.7 平方米。</p>
+      <figure class="fig fig--wide reveal" data-fig="p04">
+        <img src="../assets/p/project-04/01-section.webp" srcset="../assets/p/project-04/01-section-800.webp 800w, ../assets/p/project-04/01-section-1100.webp 1100w, ../assets/p/project-04/01-section.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="剖透视"
+             width="1600" height="1067" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">01</span>剖透视</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c02">
+    <div class="chapter__rail">
+      <span class="chapter__no">02</span>
+      <h2 class="chapter__title">核心概念：生活胶片</h2>
+    </div>
+    <p class="reveal">把老人一天的生活序列想象成空间的胶片帧——晨起、用餐、会客、休憩、种菜、养花、如厕、沐浴，每一帧都是一个场景。所以这不是一次常规的适老化改造，而是围绕老人的生活轨迹重新组织空间：动线更短、光线更足、视线更通透、交流更自然。</p>
+    <div class="chapter__key reveal">
+      <h4>设计关键词：洄游动线 · 通高空间 · 弹性家具 · 智能养老</h4>
+      <p>客厅与餐厅连通，视线连贯，落地窗外就是小院；在满足代际分隔的前提下，创造更多交流与共享的可能。</p>
+    </div>
+      <figure class="fig fig--wide reveal" data-fig="p04">
+        <img src="../assets/p/project-04/02-plan1.webp" srcset="../assets/p/project-04/02-plan1-800.webp 800w, ../assets/p/project-04/02-plan1-1100.webp 1100w, ../assets/p/project-04/02-plan1.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="一层平面"
+             width="1600" height="1067" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">02</span>一层平面</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c03">
+    <div class="chapter__rail">
+      <span class="chapter__no">03</span>
+      <h2 class="chapter__title">家庭结构与现状矛盾</h2>
+    </div>
+    <p class="reveal">三代六口：年逾五旬的务农父母、七十余岁的祖父母（日常养花种菜）、建筑学在读的儿子、高中在读的女儿。现状有四处矛盾：一层餐厅容不下六人聚餐；老人房位于背光面，采光差；卫生间狭小，不满足适老需求；二层公共空间连通性差，代际交流不足。</p>
+      <figure class="fig fig--wide reveal" data-fig="p04">
+        <img src="../assets/p/project-04/03-family.webp" srcset="../assets/p/project-04/03-family-800.webp 800w, ../assets/p/project-04/03-family-1100.webp 1100w, ../assets/p/project-04/03-family.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="家庭成员分析"
+             width="1600" height="1063" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">03</span>家庭成员分析</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p04">
+        <img src="../assets/p/project-04/04-time.webp" srcset="../assets/p/project-04/04-time-800.webp 800w, ../assets/p/project-04/04-time-1100.webp 1100w, ../assets/p/project-04/04-time.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="使用时间分析"
+             width="1600" height="1059" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">04</span>使用时间分析</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c04">
+    <div class="chapter__rail">
+      <span class="chapter__no">04</span>
+      <h2 class="chapter__title">改造策略</h2>
+    </div>
+    <p class="reveal">一层：餐厅向北扩并与客厅连通，楼梯改为 L 型，老人房移到采光面、与扩大后的卫生间形成洄游；二层：公共区域做通高，露台改为户外餐聚，儿子的房间可变书房，女儿的房间加强私密。</p>
+      <figure class="fig fig--wide reveal" data-fig="p04">
+        <img src="../assets/p/project-04/05-strategy.webp" srcset="../assets/p/project-04/05-strategy-800.webp 800w, ../assets/p/project-04/05-strategy-1100.webp 1100w, ../assets/p/project-04/05-strategy.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="设计策略、现有空间矛盾"
+             width="1600" height="1034" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">05</span>设计策略、现有空间矛盾</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c05">
+    <div class="chapter__rail">
+      <span class="chapter__no">05</span>
+      <h2 class="chapter__title">适老化专项设计</h2>
+    </div>
+    <p class="reveal">落在四件事上：视线——客厅设镜面，老人起坐时能看到入户动静；光线——加开窗，把自然光引进室内；洄游——老人卧室、卫生间与阳台之间形成回游路线，坐轮椅也不用掉头；储藏——老人舍不得丢的旧物，在客厅与卧室留足存放的位置。</p>
+      <figure class="fig fig--wide reveal" data-fig="p04">
+        <img src="../assets/p/project-04/06-aging.webp" srcset="../assets/p/project-04/06-aging-800.webp 800w, ../assets/p/project-04/06-aging-1100.webp 1100w, ../assets/p/project-04/06-aging.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="适老化设计"
+             width="1600" height="406" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">06</span>适老化设计</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c06">
+    <div class="chapter__rail">
+      <span class="chapter__no">06</span>
+      <h2 class="chapter__title">智能养老系统</h2>
+    </div>
+    <p class="reveal">全屋 12 项设备覆盖卧室、生活阳台、卫生间、客厅与厨房：呼吸心跳雷达、紧急呼叫、摄像头、电动窗帘、跌倒警报、水浸报警、智能晾衣架、夜间过道感应灯、提醒药盒、煤气与烟雾报警、门磁。技术本身不新，但每一项都对应老人在家的一个具体动作。</p>
+      <figure class="fig fig--wide reveal" data-fig="p04">
+        <img src="../assets/p/project-04/07-smart.webp" srcset="../assets/p/project-04/07-smart-800.webp 800w, ../assets/p/project-04/07-smart-1100.webp 1100w, ../assets/p/project-04/07-smart.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="智能养老系统"
+             width="1600" height="506" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">07</span>智能养老系统</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c07">
+    <div class="chapter__rail">
+      <span class="chapter__no">07</span>
+      <h2 class="chapter__title">弹性变化与家具精细化</h2>
+    </div>
+    <p class="reveal">空间要经得起家庭生命周期的变化：老人身体尚好时，阳台是休憩养花的地方；需要保姆照护时，阳台可以改成保姆房，加一道围合就解决私密性。家具同样可变——可伸缩岛台、可变床沙发、可折叠书柜、可拆分茶几，让 122.7 平方米具备最大的使用弹性。</p>
+      <figure class="fig fig--wide reveal" data-fig="p04">
+        <img src="../assets/p/project-04/08-flexible.webp" srcset="../assets/p/project-04/08-flexible-800.webp 800w, ../assets/p/project-04/08-flexible-1100.webp 1100w, ../assets/p/project-04/08-flexible.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="可变空间"
+             width="1600" height="1067" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">08</span>可变空间</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p04">
+        <img src="../assets/p/project-04/09-render.webp" srcset="../assets/p/project-04/09-render-800.webp 800w, ../assets/p/project-04/09-render-1100.webp 1100w, ../assets/p/project-04/09-render.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="效果图"
+             width="1600" height="470" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">09</span>效果图</figcaption>
+      </figure>
+  </section>
+    </div>
+  </div>
+
+  <nav class="pager" aria-label="作品翻页">
+    <div class="pager__grid">
+      <a class="pager__item pager__item--prev" href="03.html">
+        <span class="pager__dir">← 上一个</span>
+        <span class="pager__title">山间·聚场</span>
+        <span class="pager__type">校园剧场设计</span>
+      </a>
+      <a class="pager__item pager__item--next" href="05.html">
+        <span class="pager__dir">下一个 →</span>
+        <span class="pager__title">嘉陵旧梦·次元新厂</span>
+        <span class="pager__type">城市设计</span>
+      </a>
+    </div>
+  </nav>
+
+</article>
+</main>
+
+<!-- 叠层观看：背景城市线稿 + 左侧章节索引 + 右侧标注 -->
+<div class="deck" aria-hidden="true">
+  <div class="deck__sky"></div>
+  <div class="deck__grid"></div>
+  <svg class="deck__city deck__city--l" viewBox="0 0 320 420" fill="none" aria-hidden="true"><path d="M-20 420V344h22V420" /><path d="M-9.0 352V414" opacity=".42" /><path d="M-16 362h14" opacity=".3" /><path d="M-16 392h14" opacity=".3" /><path d="M8 420V124h22V420" /><path d="M19.0 132V414" opacity=".42" /><path d="M12 142h14" opacity=".3" /><path d="M12 172h14" opacity=".3" /><path d="M12 202h14" opacity=".3" /><path d="M12 232h14" opacity=".3" /><path d="M12 262h14" opacity=".3" /><path d="M12 292h14" opacity=".3" /><path d="M12 322h14" opacity=".3" /><path d="M12 352h14" opacity=".3" /><path d="M12 382h14" opacity=".3" /><path d="M12 412h14" opacity=".3" /><path d="M36 420V335h22V420" /><path d="M47.0 343V414" opacity=".42" /><path d="M40 353h14" opacity=".3" /><path d="M40 383h14" opacity=".3" /><path d="M40 413h14" opacity=".3" /><path d="M62 420V265h30V420" /><path d="M72.0 273V414" opacity=".42" /><path d="M82.0 273V414" opacity=".42" /><path d="M66 283h22" opacity=".3" /><path d="M66 313h22" opacity=".3" /><path d="M66 343h22" opacity=".3" /><path d="M66 373h22" opacity=".3" /><path d="M66 403h22" opacity=".3" /><path d="M98 420V200h34V420" /><path d="M109.3 208V414" opacity=".42" /><path d="M120.7 208V414" opacity=".42" /><path d="M102 218h26" opacity=".3" /><path d="M102 248h26" opacity=".3" /><path d="M102 278h26" opacity=".3" /><path d="M102 308h26" opacity=".3" /><path d="M102 338h26" opacity=".3" /><path d="M102 368h26" opacity=".3" /><path d="M102 398h26" opacity=".3" /><path d="M136 420V128h40V420" /><path d="M146.0 136V414" opacity=".42" /><path d="M156.0 136V414" opacity=".42" /><path d="M166.0 136V414" opacity=".42" /><path d="M140 146h32" opacity=".3" /><path d="M140 176h32" opacity=".3" /><path d="M140 206h32" opacity=".3" /><path d="M140 236h32" opacity=".3" /><path d="M140 266h32" opacity=".3" /><path d="M140 296h32" opacity=".3" /><path d="M140 326h32" opacity=".3" /><path d="M140 356h32" opacity=".3" /><path d="M140 386h32" opacity=".3" /><path d="M180 420V119h22V420" /><path d="M191.0 127V414" opacity=".42" /><path d="M184 137h14" opacity=".3" /><path d="M184 167h14" opacity=".3" /><path d="M184 197h14" opacity=".3" /><path d="M184 227h14" opacity=".3" /><path d="M184 257h14" opacity=".3" /><path d="M184 287h14" opacity=".3" /><path d="M184 317h14" opacity=".3" /><path d="M184 347h14" opacity=".3" /><path d="M184 377h14" opacity=".3" /><path d="M184 407h14" opacity=".3" /><path d="M206 420V284h34V420" /><path d="M217.3 292V414" opacity=".42" /><path d="M228.7 292V414" opacity=".42" /><path d="M210 302h26" opacity=".3" /><path d="M210 332h26" opacity=".3" /><path d="M210 362h26" opacity=".3" /><path d="M210 392h26" opacity=".3" /><path d="M250 420V79h40V420" /><path d="M260.0 87V414" opacity=".42" /><path d="M270.0 87V414" opacity=".42" /><path d="M280.0 87V414" opacity=".42" /><path d="M254 97h32" opacity=".3" /><path d="M254 127h32" opacity=".3" /><path d="M254 157h32" opacity=".3" /><path d="M254 187h32" opacity=".3" /><path d="M254 217h32" opacity=".3" /><path d="M254 247h32" opacity=".3" /><path d="M254 277h32" opacity=".3" /><path d="M254 307h32" opacity=".3" /><path d="M254 337h32" opacity=".3" /><path d="M254 367h32" opacity=".3" /><path d="M254 397h32" opacity=".3" /><path d="M296 420V89h26V420" /><path d="M309.0 97V414" opacity=".42" /><path d="M300 107h18" opacity=".3" /><path d="M300 137h18" opacity=".3" /><path d="M300 167h18" opacity=".3" /><path d="M300 197h18" opacity=".3" /><path d="M300 227h18" opacity=".3" /><path d="M300 257h18" opacity=".3" /><path d="M300 287h18" opacity=".3" /><path d="M300 317h18" opacity=".3" /><path d="M300 347h18" opacity=".3" /><path d="M300 377h18" opacity=".3" /><path d="M300 407h18" opacity=".3" /><path d="M326 420V60h40V420" /><path d="M336.0 68V414" opacity=".42" /><path d="M346.0 68V414" opacity=".42" /><path d="M356.0 68V414" opacity=".42" /><path d="M330 78h32" opacity=".3" /><path d="M330 108h32" opacity=".3" /><path d="M330 138h32" opacity=".3" /><path d="M330 168h32" opacity=".3" /><path d="M330 198h32" opacity=".3" /><path d="M330 228h32" opacity=".3" /><path d="M330 258h32" opacity=".3" /><path d="M330 288h32" opacity=".3" /><path d="M330 318h32" opacity=".3" /><path d="M330 348h32" opacity=".3" /><path d="M330 378h32" opacity=".3" /><path d="M330 408h32" opacity=".3" /></svg>
+  <svg class="deck__city deck__city--r" viewBox="0 0 320 420" fill="none" aria-hidden="true"><g transform="translate(320 0) scale(-1 1)"><path d="M-20 420V201h30V420" /><path d="M-10.0 209V414" opacity=".42" /><path d="M0.0 209V414" opacity=".42" /><path d="M-16 219h22" opacity=".3" /><path d="M-16 249h22" opacity=".3" /><path d="M-16 279h22" opacity=".3" /><path d="M-16 309h22" opacity=".3" /><path d="M-16 339h22" opacity=".3" /><path d="M-16 369h22" opacity=".3" /><path d="M-16 399h22" opacity=".3" /><path d="M14 420V317h22V420" /><path d="M25.0 325V414" opacity=".42" /><path d="M18 335h14" opacity=".3" /><path d="M18 365h14" opacity=".3" /><path d="M18 395h14" opacity=".3" /><path d="M40 420V278h40V420" /><path d="M50.0 286V414" opacity=".42" /><path d="M60.0 286V414" opacity=".42" /><path d="M70.0 286V414" opacity=".42" /><path d="M44 296h32" opacity=".3" /><path d="M44 326h32" opacity=".3" /><path d="M44 356h32" opacity=".3" /><path d="M44 386h32" opacity=".3" /><path d="M86 420V258h40V420" /><path d="M96.0 266V414" opacity=".42" /><path d="M106.0 266V414" opacity=".42" /><path d="M116.0 266V414" opacity=".42" /><path d="M90 276h32" opacity=".3" /><path d="M90 306h32" opacity=".3" /><path d="M90 336h32" opacity=".3" /><path d="M90 366h32" opacity=".3" /><path d="M90 396h32" opacity=".3" /><path d="M128 420V301h30V420" /><path d="M138.0 309V414" opacity=".42" /><path d="M148.0 309V414" opacity=".42" /><path d="M132 319h22" opacity=".3" /><path d="M132 349h22" opacity=".3" /><path d="M132 379h22" opacity=".3" /><path d="M132 409h22" opacity=".3" /><path d="M168 420V183h34V420" /><path d="M179.3 191V414" opacity=".42" /><path d="M190.7 191V414" opacity=".42" /><path d="M172 201h26" opacity=".3" /><path d="M172 231h26" opacity=".3" /><path d="M172 261h26" opacity=".3" /><path d="M172 291h26" opacity=".3" /><path d="M172 321h26" opacity=".3" /><path d="M172 351h26" opacity=".3" /><path d="M172 381h26" opacity=".3" /><path d="M172 411h26" opacity=".3" /><path d="M206 420V190h34V420" /><path d="M217.3 198V414" opacity=".42" /><path d="M228.7 198V414" opacity=".42" /><path d="M210 208h26" opacity=".3" /><path d="M210 238h26" opacity=".3" /><path d="M210 268h26" opacity=".3" /><path d="M210 298h26" opacity=".3" /><path d="M210 328h26" opacity=".3" /><path d="M210 358h26" opacity=".3" /><path d="M210 388h26" opacity=".3" /><path d="M250 420V121h26V420" /><path d="M263.0 129V414" opacity=".42" /><path d="M254 139h18" opacity=".3" /><path d="M254 169h18" opacity=".3" /><path d="M254 199h18" opacity=".3" /><path d="M254 229h18" opacity=".3" /><path d="M254 259h18" opacity=".3" /><path d="M254 289h18" opacity=".3" /><path d="M254 319h18" opacity=".3" /><path d="M254 349h18" opacity=".3" /><path d="M254 379h18" opacity=".3" /><path d="M254 409h18" opacity=".3" /><path d="M286 420V335h34V420" /><path d="M297.3 343V414" opacity=".42" /><path d="M308.7 343V414" opacity=".42" /><path d="M290 353h26" opacity=".3" /><path d="M290 383h26" opacity=".3" /><path d="M290 413h26" opacity=".3" /><path d="M322 420V243h34V420" /><path d="M333.3 251V414" opacity=".42" /><path d="M344.7 251V414" opacity=".42" /><path d="M326 261h26" opacity=".3" /><path d="M326 291h26" opacity=".3" /><path d="M326 321h26" opacity=".3" /><path d="M326 351h26" opacity=".3" /><path d="M326 381h26" opacity=".3" /><path d="M326 411h26" opacity=".3" /></g></svg>
+  <div class="deck__vig"></div>
+</div>
+
+<nav class="decknav" aria-label="章节索引">
+  <p class="decknav__t">旧檐新序<i>New Order Beneath Old Eaves</i></p>
+  <a href="#c01"><b>01</b>设计命题</a>
+  <a href="#c02"><b>02</b>核心概念：生活胶片</a>
+  <a href="#c03"><b>03</b>家庭结构与现状矛盾</a>
+  <a href="#c04"><b>04</b>改造策略</a>
+  <a href="#c05"><b>05</b>适老化专项设计</a>
+  <a href="#c06"><b>06</b>智能养老系统</a>
+  <a href="#c07"><b>07</b>弹性变化与家具精细化</a>
+</nav>
+
+<div class="deckmeta" aria-hidden="true">
+  <p class="deckmeta__k">室内精细化设计</p>
+  <p class="deckmeta__v">04 — 旧檐新序</p>
+  <span class="deckmeta__line"></span>
+</div>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© 2026 杨官运</span>
+    <a href="mailto:gyyangmail@163.com">gyyangmail@163.com</a>
+    <a href="../index.html">回到目录 ↑</a>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="图片查看" hidden>
+  <button class="lightbox__close" type="button" aria-label="关闭">×</button>
+  <button class="lightbox__prev" type="button" aria-label="上一张">‹</button>
+  <button class="lightbox__next" type="button" aria-label="下一张">›</button>
+  <figure class="lightbox__stage">
+    <img id="lightboxImg" src="" alt="">
+  </figure>
+  <p class="lightbox__cap" id="lightboxCap"></p>
+</div>
+
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>

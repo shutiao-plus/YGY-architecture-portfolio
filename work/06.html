@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>归樵问竹 — 杨官运</title>
+<meta name="description" content="归樵问竹 · 清代江南古典园林建筑设计 — 以园主郑板桥为线索 — 杨官运建筑设计作品。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="归樵问竹 — 杨官运">
+<meta property="og:image" content="../assets/p/project-06/01-cover.webp">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2316140f'/%3E%3Ctext x='16' y='23' font-size='17' fill='%23f7f5f1' text-anchor='middle' font-family='Georgia,serif'%3E%E6%9D%A8%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/css/style.css">
+
+<!-- 落地页的第一帧：如果是从目录点进来的，趁解析时就把那张封面盖上，
+     避免"新文档先白一下、再出现遮罩"造成的停顿感 -->
+<script>
+  (function () {
+    try {
+      var raw = sessionStorage.getItem('dsh-transit');
+      if (!raw) return;
+      sessionStorage.removeItem('dsh-transit');
+      var d = JSON.parse(raw);
+      if (!d || d.no !== '06' || !d.src) return;
+      var v = document.createElement('div');
+      v.id = 'arrive';
+      v.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#f6f1e7;' +
+        'opacity:1;transition:opacity .34s ease .04s;pointer-events:none';
+      v.innerHTML = '<img alt="" src="' + d.src + '" style="width:100%;height:100%;object-fit:cover">';
+      (document.documentElement).appendChild(v);
+      window.__arriveAt = Date.now();
+      addEventListener('load', function () {
+        setTimeout(function () {
+          v.style.opacity = '0';
+          setTimeout(function () { v.remove(); }, 800);
+        }, 60);
+      });
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body class="page-work" data-no="06" style="--accent:#3f5138; --deck-bg:#0b0f0c; --deck-glow:#2d3a29">
+
+<script>
+  (function () {
+    document.documentElement.classList.add('js');
+    setTimeout(function () {
+      if (window.__revealReady) return;
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
+    }, 1500);
+  })();
+</script>
+
+<a class="skip" href="#main">跳到内容</a>
+
+<header class="site-head" id="siteHead">
+  <a class="brand" href="../index.html">
+    <span class="brand__cn">杨官运</span>
+    <span class="brand__en">YANG GUANYUN</span>
+  </a>
+  <div class="head-right">
+    <span class="head-count">06 / 06</span>
+    <nav class="head-nav" aria-label="主导航">
+      <a href="../index.html">目录</a>
+      <a href="../about.html">关于</a>
+    </nav>
+    <button class="viewswitch" id="viewSwitch" type="button" aria-pressed="false">
+      <span class="viewswitch__i" aria-hidden="true"></span>
+      <span class="viewswitch__t">叠层</span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+<article class="work">
+
+  <header class="work__hero">
+    <img src="../assets/p/project-06/01-cover.webp"
+         srcset="../assets/p/project-06/01-cover-800.webp 800w, ../assets/p/project-06/01-cover-1100.webp 1100w, ../assets/p/project-06/01-cover.webp 1600w"
+         sizes="100vw" alt="归樵问竹 主视觉"
+         width="1600" height="900" fetchpriority="high" decoding="async">
+    <div class="work__scrim" aria-hidden="true"></div>
+    <div class="work__head">
+      <div class="wrap">
+        <p class="work__kicker"><span class="work__no">06</span><span class="work__type">清代江南园林设计</span></p>
+        <h1 class="work__title">归樵问竹</h1>
+        <p class="work__en">Return to the Bamboo</p>
+        <p class="work__sub">清代江南古典园林建筑设计 — 以园主郑板桥为线索</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <dl class="work__spec">
+      <div><dt>地点</dt><dd>江苏省扬州市</dd></div>
+      <div><dt>面积</dt><dd>3,880 ㎡</dd></div>
+      <div><dt>年份</dt><dd>2025.11</dd></div>
+      <div><dt>团队</dt><dd>杨官运、王一凡</dd></div>
+      <div><dt>来源</dt><dd>大四上课程作业</dd></div>
+      <div><dt>指导</dt><dd>汪智洋</dd></div>
+      <div><dt>参与</dt><dd>前期分析、方案构思、3D 建模、工程图、后期分析、渲染、后期处理</dd></div>
+    </dl>
+
+    <p class="work__lede">一位以画竹闻名的文人，他的家应该是什么样？</p>
+
+    <div class="work__body">
+  <section class="chapter" id="c01">
+    <div class="chapter__rail">
+      <span class="chapter__no">01</span>
+      <h2 class="chapter__title">设计缘起</h2>
+    </div>
+    <p class="reveal">清代康乾盛世是中国古典园林艺术的巅峰，文人造园蔚然成风。郑板桥是「扬州八怪」的代表，以诗书画三绝闻名，尤爱竹、兰、石。设计为他的晚年归隐造一座江南私家园林，要回答的其实是一个很直白的问题：一位以画竹闻名的文人，他的家应该是什么样？</p>
+      <figure class="fig fig--wide reveal" data-fig="p06">
+        <img src="../assets/p/project-06/01-aerial.webp" srcset="../assets/p/project-06/01-aerial-800.webp 800w, ../assets/p/project-06/01-aerial-1100.webp 1100w, ../assets/p/project-06/01-aerial.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="鸟瞰"
+             width="1600" height="1067" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">01</span>鸟瞰</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c02">
+    <div class="chapter__rail">
+      <span class="chapter__no">02</span>
+      <h2 class="chapter__title">核心概念：归樵问竹</h2>
+    </div>
+    <p class="reveal">「归樵」是辞官归隐、回归乡野的朴拙；「问竹」是与竹对话、寄情笔墨的雅致。全园以竹语堂为核心，浮影楼、浣兰亭为对景，以观竹、观云、观书、观画为意趣，把「诗书画三绝」的文人风骨落在不足四千平方米的园子里。</p>
+    <div class="chapter__key reveal">
+      <h4>概念推演：清修之园 → 适境之园 → 逸野野趣</h4>
+      <p>竹虚心有节，兰清雅隐逸，石坚贞独立——三种植物是他人格的投射。「清修」承载写文章、作书画、听风赏竹；「适境」承载种兰草、理南园、寄情归真；「逸野」承载聚山石、赏古玩、静观心游。</p>
+    </div>
+      <figure class="fig fig--wide reveal" data-fig="p06">
+        <img src="../assets/p/project-06/02-concept.webp" srcset="../assets/p/project-06/02-concept-800.webp 800w, ../assets/p/project-06/02-concept-1100.webp 1100w, ../assets/p/project-06/02-concept.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="概念分析"
+             width="1600" height="957" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">02</span>概念分析</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c03">
+    <div class="chapter__rail">
+      <span class="chapter__no">03</span>
+      <h2 class="chapter__title">园主与时代背景</h2>
+    </div>
+    <p class="reveal">郑板桥（1693—1765），原名郑燮，号板桥，扬州八怪之一。44 岁中进士，曾任山东范县、潍县知县，后因助农民胜讼、办理赈济得罪豪绅而罢官，此后居扬州卖画为生。诗、书、画世称「三绝」，画兰竹石尤为天下知。</p>
+      <figure class="fig fig--wide reveal" data-fig="p06">
+        <img src="../assets/p/project-06/03-figure.webp" srcset="../assets/p/project-06/03-figure-800.webp 800w, ../assets/p/project-06/03-figure-1100.webp 1100w, ../assets/p/project-06/03-figure.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="人物分析"
+             width="1600" height="1016" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">03</span>人物分析</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c04">
+    <div class="chapter__rail">
+      <span class="chapter__no">04</span>
+      <h2 class="chapter__title">总体规划与造园手法</h2>
+    </div>
+    <p class="reveal">用地 3,880 平方米，容积率 0.10，建筑密度 0.09，绿化率 53.3%——以自然为本，建筑只作点景。主入口经清瘦径入园，过砚波居至竹语堂，绕水面到浮影楼、浣兰亭，沿山石林至煮石居、叶声堂，最后由泼墨榭出园。对景、借景、框景、夹景、透景、漏景、障景、隔景，江南园林的手法在这里都用上了。</p>
+      <figure class="fig fig--wide reveal" data-fig="p06">
+        <img src="../assets/p/project-06/04-masterplan.webp" srcset="../assets/p/project-06/04-masterplan-800.webp 800w, ../assets/p/project-06/04-masterplan-1100.webp 1100w, ../assets/p/project-06/04-masterplan.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="总平面图、造园手法"
+             width="1600" height="959" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">04</span>总平面图、造园手法</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p06">
+        <img src="../assets/p/project-06/05-rockwater.webp" srcset="../assets/p/project-06/05-rockwater-800.webp 800w, ../assets/p/project-06/05-rockwater-1100.webp 1100w, ../assets/p/project-06/05-rockwater.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="堆山叠水"
+             width="1600" height="653" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">05</span>堆山叠水</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c05">
+    <div class="chapter__rail">
+      <span class="chapter__no">05</span>
+      <h2 class="chapter__title">园林空间布局</h2>
+    </div>
+    <p class="reveal">接地层平面标注全园十二处节点：鉴石斋、浮影楼、浣兰亭、问月亭、回甘亭、枕石廊、煮石居、叶声堂、泼墨榭、竹语堂、砚波居、清瘦径。植物配置分三层：乔木（石榴、杏、梧桐、银杏、红枫、柳、香樟、玉兰）、灌木（桂花、腊梅、栀子）、其他（芭蕉、竹、荷花、睡莲）——四季都有可看的东西。</p>
+      <figure class="fig fig--wide reveal" data-fig="p06">
+        <img src="../assets/p/project-06/06-plan.webp" srcset="../assets/p/project-06/06-plan-800.webp 800w, ../assets/p/project-06/06-plan-1100.webp 1100w, ../assets/p/project-06/06-plan.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="平面图"
+             width="1600" height="1067" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">06</span>平面图</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c06">
+    <div class="chapter__rail">
+      <span class="chapter__no">06</span>
+      <h2 class="chapter__title">叙事与场景营造</h2>
+    </div>
+    <p class="reveal">以郑板桥一日的生活为线索：上午在砚波居写诗作画、逛清瘦径漫步竹林、在叶声堂接待客人；下午在兰圃种兰、与好友在浮影楼赏画、在问月亭对弈、在涉霞岭赏石；夜里回竹语堂宴饮、在泼墨榭酒后作诗。六种意境——静·独、谈·友、赏·喜、神·觉、见·闲、思·忘，园林在这里不只是景，是生活方式的容器。</p>
+      <figure class="fig fig--wide reveal" data-fig="p06">
+        <img src="../assets/p/project-06/07-analysis.webp" srcset="../assets/p/project-06/07-analysis-800.webp 800w, ../assets/p/project-06/07-analysis-1100.webp 1100w, ../assets/p/project-06/07-analysis.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="设计分析"
+             width="1600" height="1043" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">07</span>设计分析</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p06">
+        <img src="../assets/p/project-06/08-scene.webp" srcset="../assets/p/project-06/08-scene-800.webp 800w, ../assets/p/project-06/08-scene-1100.webp 1100w, ../assets/p/project-06/08-scene.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="场景营造"
+             width="1600" height="596" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">08</span>场景营造</figcaption>
+      </figure>
+      <figure class="fig chapter__fig--out fig--scroll reveal" data-fig="p06">
+        <div class="fig__pan">
+        <img src="../assets/p/project-06/09-section-long.webp" srcset="../assets/p/project-06/09-section-long-800.webp 800w, ../assets/p/project-06/09-section-long-1100.webp 1100w, ../assets/p/project-06/09-section-long.webp 5000w" sizes="(max-width: 900px) 100vw, 68vw" alt="剖面图"
+             width="5000" height="995" loading="lazy" decoding="async">
+        </div>
+        <figcaption><span class="fig__no">09</span>剖面图</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c07">
+    <div class="chapter__rail">
+      <span class="chapter__no">07</span>
+      <h2 class="chapter__title">竹语堂</h2>
+    </div>
+    <p class="reveal">竹语堂为全园主体，单檐歇山顶，面阔七间，前檐设廊。构造分解呈现清代江南木构的营造逻辑：放置柱 → 设置主体屋架 → 搭设轩 → 搭设椽条 → 铺设望板屋瓦 → 安装门窗、栏板、挂落。从轴测到立面剖面，木构的工艺本身就是景。</p>
+      <figure class="fig fig--wide chapter__fig--out reveal" data-fig="p06">
+        <img src="../assets/p/project-06/10-zhu-persp.webp" srcset="../assets/p/project-06/10-zhu-persp-800.webp 800w, ../assets/p/project-06/10-zhu-persp-1100.webp 1100w, ../assets/p/project-06/10-zhu-persp.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="剖透视"
+             width="1600" height="731" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">10</span>剖透视</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p06">
+        <img src="../assets/p/project-06/11-zhu-steps.webp" srcset="../assets/p/project-06/11-zhu-steps-800.webp 800w, ../assets/p/project-06/11-zhu-steps-1100.webp 1100w, ../assets/p/project-06/11-zhu-steps.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="生成步骤"
+             width="1600" height="860" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">11</span>生成步骤</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p06">
+        <img src="../assets/p/project-06/12-zhu-elev.webp" srcset="../assets/p/project-06/12-zhu-elev-800.webp 800w, ../assets/p/project-06/12-zhu-elev-1100.webp 1100w, ../assets/p/project-06/12-zhu-elev.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="正立面"
+             width="1600" height="700" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">12</span>正立面</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p06">
+        <img src="../assets/p/project-06/13-zhu-sect.webp" srcset="../assets/p/project-06/13-zhu-sect-800.webp 800w, ../assets/p/project-06/13-zhu-sect-1100.webp 1100w, ../assets/p/project-06/13-zhu-sect.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="剖面图"
+             width="1600" height="665" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">13</span>剖面图</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c08">
+    <div class="chapter__rail">
+      <span class="chapter__no">08</span>
+      <h2 class="chapter__title">浮影楼</h2>
+    </div>
+    <p class="reveal">浮影楼是二层楼阁，一层敞厅、二层观景，可远眺园外山色，近览全园池水。木构体系与厅堂一致，但楼层更高、出檐更远，形成「浮影」的轻盈感——正如其名，建筑仿佛浮在水面与林梢之上。</p>
+      <figure class="fig fig--wide chapter__fig--out reveal" data-fig="p06">
+        <img src="../assets/p/project-06/14-ying-persp.webp" srcset="../assets/p/project-06/14-ying-persp-800.webp 800w, ../assets/p/project-06/14-ying-persp-1100.webp 1100w, ../assets/p/project-06/14-ying-persp.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="剖透视"
+             width="1600" height="889" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">14</span>剖透视</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p06">
+        <img src="../assets/p/project-06/15-ying-steps.webp" srcset="../assets/p/project-06/15-ying-steps-800.webp 800w, ../assets/p/project-06/15-ying-steps-1100.webp 1100w, ../assets/p/project-06/15-ying-steps.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="生成步骤"
+             width="1600" height="759" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">15</span>生成步骤</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p06">
+        <img src="../assets/p/project-06/16-ying-elev.webp" srcset="../assets/p/project-06/16-ying-elev-800.webp 800w, ../assets/p/project-06/16-ying-elev-1100.webp 1100w, ../assets/p/project-06/16-ying-elev.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="正立面"
+             width="1600" height="984" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">16</span>正立面</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p06">
+        <img src="../assets/p/project-06/17-ying-sect.webp" srcset="../assets/p/project-06/17-ying-sect-800.webp 800w, ../assets/p/project-06/17-ying-sect-1100.webp 1100w, ../assets/p/project-06/17-ying-sect.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="剖面图"
+             width="1600" height="1010" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">17</span>剖面图</figcaption>
+      </figure>
+  </section>
+    </div>
+  </div>
+
+  <nav class="pager" aria-label="作品翻页">
+    <div class="pager__grid">
+      <a class="pager__item pager__item--prev" href="05.html">
+        <span class="pager__dir">← 上一个</span>
+        <span class="pager__title">嘉陵旧梦·次元新厂</span>
+        <span class="pager__type">城市设计</span>
+      </a>
+      <a class="pager__item pager__item--next" href="01.html">
+        <span class="pager__dir">下一个 →</span>
+        <span class="pager__title">叠浮绿境</span>
+        <span class="pager__type">高层办公建筑设计</span>
+      </a>
+    </div>
+  </nav>
+
+</article>
+</main>
+
+<!-- 叠层观看：背景城市线稿 + 左侧章节索引 + 右侧标注 -->
+<div class="deck" aria-hidden="true">
+  <div class="deck__sky"></div>
+  <div class="deck__grid"></div>
+  <svg class="deck__city deck__city--l" viewBox="0 0 320 420" fill="none" aria-hidden="true"><path d="M-20 420V274h26V420" /><path d="M-7.0 282V414" opacity=".42" /><path d="M-16 292h18" opacity=".3" /><path d="M-16 322h18" opacity=".3" /><path d="M-16 352h18" opacity=".3" /><path d="M-16 382h18" opacity=".3" /><path d="M-16 412h18" opacity=".3" /><path d="M8 420V183h22V420" /><path d="M19.0 191V414" opacity=".42" /><path d="M12 201h14" opacity=".3" /><path d="M12 231h14" opacity=".3" /><path d="M12 261h14" opacity=".3" /><path d="M12 291h14" opacity=".3" /><path d="M12 321h14" opacity=".3" /><path d="M12 351h14" opacity=".3" /><path d="M12 381h14" opacity=".3" /><path d="M12 411h14" opacity=".3" /><path d="M36 420V72h40V420" /><path d="M46.0 80V414" opacity=".42" /><path d="M56.0 80V414" opacity=".42" /><path d="M66.0 80V414" opacity=".42" /><path d="M40 90h32" opacity=".3" /><path d="M40 120h32" opacity=".3" /><path d="M40 150h32" opacity=".3" /><path d="M40 180h32" opacity=".3" /><path d="M40 210h32" opacity=".3" /><path d="M40 240h32" opacity=".3" /><path d="M40 270h32" opacity=".3" /><path d="M40 300h32" opacity=".3" /><path d="M40 330h32" opacity=".3" /><path d="M40 360h32" opacity=".3" /><path d="M40 390h32" opacity=".3" /><path d="M82 420V237h30V420" /><path d="M92.0 245V414" opacity=".42" /><path d="M102.0 245V414" opacity=".42" /><path d="M86 255h22" opacity=".3" /><path d="M86 285h22" opacity=".3" /><path d="M86 315h22" opacity=".3" /><path d="M86 345h22" opacity=".3" /><path d="M86 375h22" opacity=".3" /><path d="M86 405h22" opacity=".3" /><path d="M122 420V158h30V420" /><path d="M132.0 166V414" opacity=".42" /><path d="M142.0 166V414" opacity=".42" /><path d="M126 176h22" opacity=".3" /><path d="M126 206h22" opacity=".3" /><path d="M126 236h22" opacity=".3" /><path d="M126 266h22" opacity=".3" /><path d="M126 296h22" opacity=".3" /><path d="M126 326h22" opacity=".3" /><path d="M126 356h22" opacity=".3" /><path d="M126 386h22" opacity=".3" /><path d="M154 420V299h34V420" /><path d="M165.3 307V414" opacity=".42" /><path d="M176.7 307V414" opacity=".42" /><path d="M158 317h26" opacity=".3" /><path d="M158 347h26" opacity=".3" /><path d="M158 377h26" opacity=".3" /><path d="M158 407h26" opacity=".3" /><path d="M190 420V287h40V420" /><path d="M200.0 295V414" opacity=".42" /><path d="M210.0 295V414" opacity=".42" /><path d="M220.0 295V414" opacity=".42" /><path d="M194 305h32" opacity=".3" /><path d="M194 335h32" opacity=".3" /><path d="M194 365h32" opacity=".3" /><path d="M194 395h32" opacity=".3" /><path d="M234 420V67h30V420" /><path d="M244.0 75V414" opacity=".42" /><path d="M254.0 75V414" opacity=".42" /><path d="M238 85h22" opacity=".3" /><path d="M238 115h22" opacity=".3" /><path d="M238 145h22" opacity=".3" /><path d="M238 175h22" opacity=".3" /><path d="M238 205h22" opacity=".3" /><path d="M238 235h22" opacity=".3" /><path d="M238 265h22" opacity=".3" /><path d="M238 295h22" opacity=".3" /><path d="M238 325h22" opacity=".3" /><path d="M238 355h22" opacity=".3" /><path d="M238 385h22" opacity=".3" /><path d="M266 420V121h22V420" /><path d="M277.0 129V414" opacity=".42" /><path d="M270 139h14" opacity=".3" /><path d="M270 169h14" opacity=".3" /><path d="M270 199h14" opacity=".3" /><path d="M270 229h14" opacity=".3" /><path d="M270 259h14" opacity=".3" /><path d="M270 289h14" opacity=".3" /><path d="M270 319h14" opacity=".3" /><path d="M270 349h14" opacity=".3" /><path d="M270 379h14" opacity=".3" /><path d="M270 409h14" opacity=".3" /><path d="M292 420V335h30V420" /><path d="M302.0 343V414" opacity=".42" /><path d="M312.0 343V414" opacity=".42" /><path d="M296 353h22" opacity=".3" /><path d="M296 383h22" opacity=".3" /><path d="M296 413h22" opacity=".3" /><path d="M326 420V263h34V420" /><path d="M337.3 271V414" opacity=".42" /><path d="M348.7 271V414" opacity=".42" /><path d="M330 281h26" opacity=".3" /><path d="M330 311h26" opacity=".3" /><path d="M330 341h26" opacity=".3" /><path d="M330 371h26" opacity=".3" /><path d="M330 401h26" opacity=".3" /></svg>
+  <svg class="deck__city deck__city--r" viewBox="0 0 320 420" fill="none" aria-hidden="true"><g transform="translate(320 0) scale(-1 1)"><path d="M-20 420V75h22V420" /><path d="M-9.0 83V414" opacity=".42" /><path d="M-16 93h14" opacity=".3" /><path d="M-16 123h14" opacity=".3" /><path d="M-16 153h14" opacity=".3" /><path d="M-16 183h14" opacity=".3" /><path d="M-16 213h14" opacity=".3" /><path d="M-16 243h14" opacity=".3" /><path d="M-16 273h14" opacity=".3" /><path d="M-16 303h14" opacity=".3" /><path d="M-16 333h14" opacity=".3" /><path d="M-16 363h14" opacity=".3" /><path d="M-16 393h14" opacity=".3" /><path d="M4 420V137h22V420" /><path d="M15.0 145V414" opacity=".42" /><path d="M8 155h14" opacity=".3" /><path d="M8 185h14" opacity=".3" /><path d="M8 215h14" opacity=".3" /><path d="M8 245h14" opacity=".3" /><path d="M8 275h14" opacity=".3" /><path d="M8 305h14" opacity=".3" /><path d="M8 335h14" opacity=".3" /><path d="M8 365h14" opacity=".3" /><path d="M8 395h14" opacity=".3" /><path d="M30 420V314h40V420" /><path d="M40.0 322V414" opacity=".42" /><path d="M50.0 322V414" opacity=".42" /><path d="M60.0 322V414" opacity=".42" /><path d="M34 332h32" opacity=".3" /><path d="M34 362h32" opacity=".3" /><path d="M34 392h32" opacity=".3" /><path d="M80 420V319h40V420" /><path d="M90.0 327V414" opacity=".42" /><path d="M100.0 327V414" opacity=".42" /><path d="M110.0 327V414" opacity=".42" /><path d="M84 337h32" opacity=".3" /><path d="M84 367h32" opacity=".3" /><path d="M84 397h32" opacity=".3" /><path d="M126 420V323h26V420" /><path d="M139.0 331V414" opacity=".42" /><path d="M130 341h18" opacity=".3" /><path d="M130 371h18" opacity=".3" /><path d="M130 401h18" opacity=".3" /><path d="M162 420V186h22V420" /><path d="M173.0 194V414" opacity=".42" /><path d="M166 204h14" opacity=".3" /><path d="M166 234h14" opacity=".3" /><path d="M166 264h14" opacity=".3" /><path d="M166 294h14" opacity=".3" /><path d="M166 324h14" opacity=".3" /><path d="M166 354h14" opacity=".3" /><path d="M166 384h14" opacity=".3" /><path d="M186 420V225h22V420" /><path d="M197.0 233V414" opacity=".42" /><path d="M190 243h14" opacity=".3" /><path d="M190 273h14" opacity=".3" /><path d="M190 303h14" opacity=".3" /><path d="M190 333h14" opacity=".3" /><path d="M190 363h14" opacity=".3" /><path d="M190 393h14" opacity=".3" /><path d="M210 420V109h40V420" /><path d="M220.0 117V414" opacity=".42" /><path d="M230.0 117V414" opacity=".42" /><path d="M240.0 117V414" opacity=".42" /><path d="M214 127h32" opacity=".3" /><path d="M214 157h32" opacity=".3" /><path d="M214 187h32" opacity=".3" /><path d="M214 217h32" opacity=".3" /><path d="M214 247h32" opacity=".3" /><path d="M214 277h32" opacity=".3" /><path d="M214 307h32" opacity=".3" /><path d="M214 337h32" opacity=".3" /><path d="M214 367h32" opacity=".3" /><path d="M214 397h32" opacity=".3" /><path d="M254 420V272h30V420" /><path d="M264.0 280V414" opacity=".42" /><path d="M274.0 280V414" opacity=".42" /><path d="M258 290h22" opacity=".3" /><path d="M258 320h22" opacity=".3" /><path d="M258 350h22" opacity=".3" /><path d="M258 380h22" opacity=".3" /><path d="M258 410h22" opacity=".3" /><path d="M294 420V320h34V420" /><path d="M305.3 328V414" opacity=".42" /><path d="M316.7 328V414" opacity=".42" /><path d="M298 338h26" opacity=".3" /><path d="M298 368h26" opacity=".3" /><path d="M298 398h26" opacity=".3" /><path d="M332 420V247h30V420" /><path d="M342.0 255V414" opacity=".42" /><path d="M352.0 255V414" opacity=".42" /><path d="M336 265h22" opacity=".3" /><path d="M336 295h22" opacity=".3" /><path d="M336 325h22" opacity=".3" /><path d="M336 355h22" opacity=".3" /><path d="M336 385h22" opacity=".3" /></g></svg>
+  <div class="deck__vig"></div>
+</div>
+
+<nav class="decknav" aria-label="章节索引">
+  <p class="decknav__t">归樵问竹<i>Return to the Bamboo</i></p>
+  <a href="#c01"><b>01</b>设计缘起</a>
+  <a href="#c02"><b>02</b>核心概念：归樵问竹</a>
+  <a href="#c03"><b>03</b>园主与时代背景</a>
+  <a href="#c04"><b>04</b>总体规划与造园手法</a>
+  <a href="#c05"><b>05</b>园林空间布局</a>
+  <a href="#c06"><b>06</b>叙事与场景营造</a>
+  <a href="#c07"><b>07</b>竹语堂</a>
+  <a href="#c08"><b>08</b>浮影楼</a>
+</nav>
+
+<div class="deckmeta" aria-hidden="true">
+  <p class="deckmeta__k">清代江南园林设计</p>
+  <p class="deckmeta__v">06 — 归樵问竹</p>
+  <span class="deckmeta__line"></span>
+</div>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© 2026 杨官运</span>
+    <a href="mailto:gyyangmail@163.com">gyyangmail@163.com</a>
+    <a href="../index.html">回到目录 ↑</a>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="图片查看" hidden>
+  <button class="lightbox__close" type="button" aria-label="关闭">×</button>
+  <button class="lightbox__prev" type="button" aria-label="上一张">‹</button>
+  <button class="lightbox__next" type="button" aria-label="下一张">›</button>
+  <figure class="lightbox__stage">
+    <img id="lightboxImg" src="" alt="">
+  </figure>
+  <p class="lightbox__cap" id="lightboxCap"></p>
+</div>
+
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>

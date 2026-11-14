@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>嘉陵旧梦·次元新厂 — 杨官运</title>
+<meta name="description" content="嘉陵旧梦·次元新厂 · 沿江旧厂区的整体缝合与再生 — 杨官运建筑设计作品。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="嘉陵旧梦·次元新厂 — 杨官运">
+<meta property="og:image" content="../assets/p/project-05/01-cover.webp">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2316140f'/%3E%3Ctext x='16' y='23' font-size='17' fill='%23f7f5f1' text-anchor='middle' font-family='Georgia,serif'%3E%E6%9D%A8%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/css/style.css">
+
+<!-- 落地页的第一帧：如果是从目录点进来的，趁解析时就把那张封面盖上，
+     避免"新文档先白一下、再出现遮罩"造成的停顿感 -->
+<script>
+  (function () {
+    try {
+      var raw = sessionStorage.getItem('dsh-transit');
+      if (!raw) return;
+      sessionStorage.removeItem('dsh-transit');
+      var d = JSON.parse(raw);
+      if (!d || d.no !== '05' || !d.src) return;
+      var v = document.createElement('div');
+      v.id = 'arrive';
+      v.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#f6f1e7;' +
+        'opacity:1;transition:opacity .34s ease .04s;pointer-events:none';
+      v.innerHTML = '<img alt="" src="' + d.src + '" style="width:100%;height:100%;object-fit:cover">';
+      (document.documentElement).appendChild(v);
+      window.__arriveAt = Date.now();
+      addEventListener('load', function () {
+        setTimeout(function () {
+          v.style.opacity = '0';
+          setTimeout(function () { v.remove(); }, 800);
+        }, 60);
+      });
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body class="page-work" data-no="05" style="--accent:#6f5b1c; --deck-bg:#0e0f12; --deck-glow:#4a3f14">
+
+<script>
+  (function () {
+    document.documentElement.classList.add('js');
+    setTimeout(function () {
+      if (window.__revealReady) return;
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
+    }, 1500);
+  })();
+</script>
+
+<a class="skip" href="#main">跳到内容</a>
+
+<header class="site-head" id="siteHead">
+  <a class="brand" href="../index.html">
+    <span class="brand__cn">杨官运</span>
+    <span class="brand__en">YANG GUANYUN</span>
+  </a>
+  <div class="head-right">
+    <span class="head-count">05 / 06</span>
+    <nav class="head-nav" aria-label="主导航">
+      <a href="../index.html">目录</a>
+      <a href="../about.html">关于</a>
+    </nav>
+    <button class="viewswitch" id="viewSwitch" type="button" aria-pressed="false">
+      <span class="viewswitch__i" aria-hidden="true"></span>
+      <span class="viewswitch__t">叠层</span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+<article class="work">
+
+  <header class="work__hero">
+    <img src="../assets/p/project-05/01-cover.webp"
+         srcset="../assets/p/project-05/01-cover-800.webp 800w, ../assets/p/project-05/01-cover-1100.webp 1100w, ../assets/p/project-05/01-cover.webp 1600w"
+         sizes="100vw" alt="嘉陵旧梦·次元新厂 主视觉"
+         width="1600" height="900" fetchpriority="high" decoding="async">
+    <div class="work__scrim" aria-hidden="true"></div>
+    <div class="work__head">
+      <div class="wrap">
+        <p class="work__kicker"><span class="work__no">05</span><span class="work__type">城市设计</span></p>
+        <h1 class="work__title">嘉陵旧梦·次元新厂</h1>
+        <p class="work__en">Jialing Reverie</p>
+        <p class="work__sub">沿江旧厂区的整体缝合与再生</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <dl class="work__spec">
+      <div><dt>地点</dt><dd>重庆市沙坪坝区</dd></div>
+      <div><dt>面积</dt><dd>69,190 ㎡</dd></div>
+      <div><dt>年份</dt><dd>2026.6</dd></div>
+      <div><dt>团队</dt><dd>杨官运、王一凡、刘芸彤</dd></div>
+      <div><dt>来源</dt><dd>大四下课程作业</dd></div>
+      <div><dt>指导</dt><dd>杨震</dd></div>
+      <div><dt>参与</dt><dd>前期分析、方案构思、3D 建模、工程图、后期分析、渲染、后期处理</dd></div>
+    </dl>
+
+    <p class="work__lede">不是在旧厂房里「装修」，而是在旧厂房之间「生长」。</p>
+
+    <div class="work__body">
+  <section class="chapter" id="c01">
+    <div class="chapter__rail">
+      <span class="chapter__no">01</span>
+      <h2 class="chapter__title">设计命题</h2>
+    </div>
+    <p class="reveal">嘉陵机器厂始建于 1938 年，曾生产子弹、枪榴弹，三线建设时期形成大院式的生活社区。产业外迁之后，厂房闲置、人口外流，滨江工业带成了城市记忆与现实发展之间的断层。怎么让这片工业遗产从「城市伤疤」变成「青年目的地」，是设计的核心命题。</p>
+      <figure class="fig fig--wide chapter__fig--out reveal" data-fig="p05">
+        <img src="../assets/p/project-05/01-aerial.webp" srcset="../assets/p/project-05/01-aerial-800.webp 800w, ../assets/p/project-05/01-aerial-1100.webp 1100w, ../assets/p/project-05/01-aerial.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="鸟瞰"
+             width="1600" height="1067" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">01</span>鸟瞰</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c02">
+    <div class="chapter__rail">
+      <span class="chapter__no">02</span>
+      <h2 class="chapter__title">核心策略：工业重生 × 次元新生</h2>
+    </div>
+    <p class="reveal">保留青砖厂房的粗犷结构与历史记忆，注入电竞、动漫、音乐三条青年文化赛道。按「首层体验引流—中层沉浸转化—顶层内容变现」的垂直逻辑组织功能，再用一套黄色空中廊道把新旧建筑串起来，形成完整的消费闭环。</p>
+    <div class="chapter__key reveal">
+      <h4>空间策略：旧厂房保留结构 + 黄色廊道串联 + 三大体验板块垂直叠加</h4>
+      <p>不是在旧厂房里「装修」，而是在旧厂房之间「生长」——保留工业遗存的结构骨架，用明亮的黄色廊道作为新与旧的视觉缝合线；游戏竞技 45%、动漫文化 30%、音乐体验 25%，从地面到屋顶形成完整体验动线。</p>
+    </div>
+      <figure class="fig fig--wide reveal" data-fig="p05">
+        <img src="../assets/p/project-05/02-strategy.webp" srcset="../assets/p/project-05/02-strategy-800.webp 800w, ../assets/p/project-05/02-strategy-1100.webp 1100w, ../assets/p/project-05/02-strategy.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="设计策略"
+             width="1600" height="1007" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">02</span>设计策略</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c03">
+    <div class="chapter__rail">
+      <span class="chapter__no">03</span>
+      <h2 class="chapter__title">场地与历史沿革</h2>
+    </div>
+    <p class="reveal">场地位于沙坪坝区嘉陵江北岸沙滨路沿线。1938 年内迁建厂，为军工 25 兵工厂；1958 年三线建设，生产枪弹、机枪弹；1978 年军转民生产摩托车；1980—2000 年代进入民用产业的黄金期；2010 年代以后转向文化记忆。周边有磁器口、重庆天地等文旅节点，但青年文化体验仍是空白。</p>
+      <figure class="fig fig--wide reveal" data-fig="p05">
+        <img src="../assets/p/project-05/03-site.webp" srcset="../assets/p/project-05/03-site-800.webp 800w, ../assets/p/project-05/03-site-1100.webp 1100w, ../assets/p/project-05/03-site.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="场地分析"
+             width="1600" height="1045" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">03</span>场地分析</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p05">
+        <img src="../assets/p/project-05/04-swot.webp" srcset="../assets/p/project-05/04-swot-800.webp 800w, ../assets/p/project-05/04-swot-1100.webp 1100w, ../assets/p/project-05/04-swot.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="SWOT 分析"
+             width="1600" height="762" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">04</span>SWOT 分析</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p05">
+        <img src="../assets/p/project-05/05-history.webp" srcset="../assets/p/project-05/05-history-800.webp 800w, ../assets/p/project-05/05-history-1100.webp 1100w, ../assets/p/project-05/05-history.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="历史沿革"
+             width="1600" height="572" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">05</span>历史沿革</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c04">
+    <div class="chapter__rail">
+      <span class="chapter__no">04</span>
+      <h2 class="chapter__title">人群定位与业态策略</h2>
+    </div>
+    <p class="reveal">客群以 18—28 岁的深度 ACG 爱好者与硬核玩家为核心（45%），泛二次元与社交探索者为次核心（35% + 20%）。对比全国电竞、动漫、音乐的市场数据，能看出重庆滨江线上仍缺一个综合性的青年文化目的地——这正是业态植入的切口。</p>
+      <figure class="fig fig--wide reveal" data-fig="p05">
+        <img src="../assets/p/project-05/06-crowd.webp" srcset="../assets/p/project-05/06-crowd-800.webp 800w, ../assets/p/project-05/06-crowd-1100.webp 1100w, ../assets/p/project-05/06-crowd.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="客群分析"
+             width="1600" height="605" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">06</span>客群分析</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p05">
+        <img src="../assets/p/project-05/07-competitor.webp" srcset="../assets/p/project-05/07-competitor-800.webp 800w, ../assets/p/project-05/07-competitor-1100.webp 1100w, ../assets/p/project-05/07-competitor.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="竞品分析"
+             width="1600" height="866" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">07</span>竞品分析</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p05">
+        <img src="../assets/p/project-05/08-program.webp" srcset="../assets/p/project-05/08-program-800.webp 800w, ../assets/p/project-05/08-program-1100.webp 1100w, ../assets/p/project-05/08-program.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="功能植入"
+             width="1600" height="437" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">08</span>功能植入</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c05">
+    <div class="chapter__rail">
+      <span class="chapter__no">05</span>
+      <h2 class="chapter__title">总平面与功能布局</h2>
+    </div>
+    <p class="reveal">用地 3.10 万㎡，总建面 6.92 万㎡，容积率 2.07。四大板块垂直叠加：游戏竞技 45%、动漫文化 30%、音乐体验 25%，公共配套按比例分摊，整体空间使用率 78%。生成逻辑四步推导：确定轴线骨架 → 组团区分功能 → 场地节点确立 → 编织廊道模块。</p>
+      <figure class="fig fig--wide chapter__fig--out reveal" data-fig="p05">
+        <img src="../assets/p/project-05/09-masterplan.webp" srcset="../assets/p/project-05/09-masterplan-800.webp 800w, ../assets/p/project-05/09-masterplan-1100.webp 1100w, ../assets/p/project-05/09-masterplan.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="总平面图"
+             width="1600" height="1063" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">09</span>总平面图</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p05">
+        <img src="../assets/p/project-05/10-diagram.webp" srcset="../assets/p/project-05/10-diagram-800.webp 800w, ../assets/p/project-05/10-diagram-1100.webp 1100w, ../assets/p/project-05/10-diagram.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="总图分析"
+             width="1600" height="291" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">10</span>总图分析</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c06">
+    <div class="chapter__rail">
+      <span class="chapter__no">06</span>
+      <h2 class="chapter__title">地块功能与整体效果</h2>
+    </div>
+    <p class="reveal">四个地块各有主题：地块 1 游戏（电竞周边、竞技体验、VR、赛事中心），地块 2 动漫（周边零售、主题餐饮、沉浸展映、发布中心），地块 3 音乐（主题酒馆、Livehouse、咖啡、露天舞台与录音工坊），地块 4 配套（酒店、停车、滨江步道）——支撑前三块的运营。</p>
+      <figure class="fig fig--wide reveal" data-fig="p05">
+        <img src="../assets/p/project-05/11-system.webp" srcset="../assets/p/project-05/11-system-800.webp 800w, ../assets/p/project-05/11-system-1100.webp 1100w, ../assets/p/project-05/11-system.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="功能分析、系统分析"
+             width="1600" height="1067" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">11</span>功能分析、系统分析</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p05">
+        <img src="../assets/p/project-05/12-eyeview.webp" srcset="../assets/p/project-05/12-eyeview-800.webp 800w, ../assets/p/project-05/12-eyeview-1100.webp 1100w, ../assets/p/project-05/12-eyeview.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="人视点效果图"
+             width="1600" height="1067" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">12</span>人视点效果图</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c07">
+    <div class="chapter__rail">
+      <span class="chapter__no">07</span>
+      <h2 class="chapter__title">空间剖面与场景</h2>
+    </div>
+    <p class="reveal">黄色廊道在二层及以上串联全部地块，形成一张空中步行网络——人在廊道里走，可以俯瞰旧厂房的院落，也可以远眺嘉陵江。1-1 与 2-2 剖面展示从滨江步道到内部街区的垂直空间层次。</p>
+      <figure class="fig fig--wide reveal" data-fig="p05">
+        <img src="../assets/p/project-05/13-partplan.webp" srcset="../assets/p/project-05/13-partplan-800.webp 800w, ../assets/p/project-05/13-partplan-1100.webp 1100w, ../assets/p/project-05/13-partplan.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="接地层局部平面"
+             width="1600" height="1067" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">13</span>接地层局部平面</figcaption>
+      </figure>
+      <figure class="fig fig--wide chapter__fig--out reveal" data-fig="p05">
+        <img src="../assets/p/project-05/14-elevation.webp" srcset="../assets/p/project-05/14-elevation-800.webp 800w, ../assets/p/project-05/14-elevation-1100.webp 1100w, ../assets/p/project-05/14-elevation.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="立面图"
+             width="1600" height="1067" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">14</span>立面图</figcaption>
+      </figure>
+      <figure class="fig fig--wide chapter__fig--out reveal" data-fig="p05">
+        <img src="../assets/p/project-05/15-section.webp" srcset="../assets/p/project-05/15-section-800.webp 800w, ../assets/p/project-05/15-section-1100.webp 1100w, ../assets/p/project-05/15-section.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="剖面图"
+             width="1600" height="1061" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">15</span>剖面图</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p05">
+        <img src="../assets/p/project-05/16-space.webp" srcset="../assets/p/project-05/16-space-800.webp 800w, ../assets/p/project-05/16-space-1100.webp 1100w, ../assets/p/project-05/16-space.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="空间效果"
+             width="1600" height="1067" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">16</span>空间效果</figcaption>
+      </figure>
+  </section>
+    </div>
+  </div>
+
+  <nav class="pager" aria-label="作品翻页">
+    <div class="pager__grid">
+      <a class="pager__item pager__item--prev" href="04.html">
+        <span class="pager__dir">← 上一个</span>
+        <span class="pager__title">旧檐新序</span>
+        <span class="pager__type">室内精细化设计</span>
+      </a>
+      <a class="pager__item pager__item--next" href="06.html">
+        <span class="pager__dir">下一个 →</span>
+        <span class="pager__title">归樵问竹</span>
+        <span class="pager__type">清代江南园林设计</span>
+      </a>
+    </div>
+  </nav>
+
+</article>
+</main>
+
+<!-- 叠层观看：背景城市线稿 + 左侧章节索引 + 右侧标注 -->
+<div class="deck" aria-hidden="true">
+  <div class="deck__sky"></div>
+  <div class="deck__grid"></div>
+  <svg class="deck__city deck__city--l" viewBox="0 0 320 420" fill="none" aria-hidden="true"><path d="M-20 420V284h34V420" /><path d="M-8.7 292V414" opacity=".42" /><path d="M2.6999999999999993 292V414" opacity=".42" /><path d="M-16 302h26" opacity=".3" /><path d="M-16 332h26" opacity=".3" /><path d="M-16 362h26" opacity=".3" /><path d="M-16 392h26" opacity=".3" /><path d="M16 420V65h40V420" /><path d="M26.0 73V414" opacity=".42" /><path d="M36.0 73V414" opacity=".42" /><path d="M46.0 73V414" opacity=".42" /><path d="M20 83h32" opacity=".3" /><path d="M20 113h32" opacity=".3" /><path d="M20 143h32" opacity=".3" /><path d="M20 173h32" opacity=".3" /><path d="M20 203h32" opacity=".3" /><path d="M20 233h32" opacity=".3" /><path d="M20 263h32" opacity=".3" /><path d="M20 293h32" opacity=".3" /><path d="M20 323h32" opacity=".3" /><path d="M20 353h32" opacity=".3" /><path d="M20 383h32" opacity=".3" /><path d="M20 413h32" opacity=".3" /><path d="M58 420V320h26V420" /><path d="M71.0 328V414" opacity=".42" /><path d="M62 338h18" opacity=".3" /><path d="M62 368h18" opacity=".3" /><path d="M62 398h18" opacity=".3" /><path d="M94 420V232h40V420" /><path d="M104.0 240V414" opacity=".42" /><path d="M114.0 240V414" opacity=".42" /><path d="M124.0 240V414" opacity=".42" /><path d="M98 250h32" opacity=".3" /><path d="M98 280h32" opacity=".3" /><path d="M98 310h32" opacity=".3" /><path d="M98 340h32" opacity=".3" /><path d="M98 370h32" opacity=".3" /><path d="M98 400h32" opacity=".3" /><path d="M138 420V225h22V420" /><path d="M149.0 233V414" opacity=".42" /><path d="M142 243h14" opacity=".3" /><path d="M142 273h14" opacity=".3" /><path d="M142 303h14" opacity=".3" /><path d="M142 333h14" opacity=".3" /><path d="M142 363h14" opacity=".3" /><path d="M142 393h14" opacity=".3" /><path d="M166 420V83h34V420" /><path d="M177.3 91V414" opacity=".42" /><path d="M188.7 91V414" opacity=".42" /><path d="M170 101h26" opacity=".3" /><path d="M170 131h26" opacity=".3" /><path d="M170 161h26" opacity=".3" /><path d="M170 191h26" opacity=".3" /><path d="M170 221h26" opacity=".3" /><path d="M170 251h26" opacity=".3" /><path d="M170 281h26" opacity=".3" /><path d="M170 311h26" opacity=".3" /><path d="M170 341h26" opacity=".3" /><path d="M170 371h26" opacity=".3" /><path d="M170 401h26" opacity=".3" /><path d="M206 420V223h30V420" /><path d="M216.0 231V414" opacity=".42" /><path d="M226.0 231V414" opacity=".42" /><path d="M210 241h22" opacity=".3" /><path d="M210 271h22" opacity=".3" /><path d="M210 301h22" opacity=".3" /><path d="M210 331h22" opacity=".3" /><path d="M210 361h22" opacity=".3" /><path d="M210 391h22" opacity=".3" /><path d="M242 420V274h26V420" /><path d="M255.0 282V414" opacity=".42" /><path d="M246 292h18" opacity=".3" /><path d="M246 322h18" opacity=".3" /><path d="M246 352h18" opacity=".3" /><path d="M246 382h18" opacity=".3" /><path d="M246 412h18" opacity=".3" /><path d="M272 420V184h40V420" /><path d="M282.0 192V414" opacity=".42" /><path d="M292.0 192V414" opacity=".42" /><path d="M302.0 192V414" opacity=".42" /><path d="M276 202h32" opacity=".3" /><path d="M276 232h32" opacity=".3" /><path d="M276 262h32" opacity=".3" /><path d="M276 292h32" opacity=".3" /><path d="M276 322h32" opacity=".3" /><path d="M276 352h32" opacity=".3" /><path d="M276 382h32" opacity=".3" /><path d="M276 412h32" opacity=".3" /><path d="M318 420V85h40V420" /><path d="M328.0 93V414" opacity=".42" /><path d="M338.0 93V414" opacity=".42" /><path d="M348.0 93V414" opacity=".42" /><path d="M322 103h32" opacity=".3" /><path d="M322 133h32" opacity=".3" /><path d="M322 163h32" opacity=".3" /><path d="M322 193h32" opacity=".3" /><path d="M322 223h32" opacity=".3" /><path d="M322 253h32" opacity=".3" /><path d="M322 283h32" opacity=".3" /><path d="M322 313h32" opacity=".3" /><path d="M322 343h32" opacity=".3" /><path d="M322 373h32" opacity=".3" /><path d="M322 403h32" opacity=".3" /></svg>
+  <svg class="deck__city deck__city--r" viewBox="0 0 320 420" fill="none" aria-hidden="true"><g transform="translate(320 0) scale(-1 1)"><path d="M-20 420V340h34V420" /><path d="M-8.7 348V414" opacity=".42" /><path d="M2.6999999999999993 348V414" opacity=".42" /><path d="M-16 358h26" opacity=".3" /><path d="M-16 388h26" opacity=".3" /><path d="M24 420V280h30V420" /><path d="M34.0 288V414" opacity=".42" /><path d="M44.0 288V414" opacity=".42" /><path d="M28 298h22" opacity=".3" /><path d="M28 328h22" opacity=".3" /><path d="M28 358h22" opacity=".3" /><path d="M28 388h22" opacity=".3" /><path d="M56 420V285h22V420" /><path d="M67.0 293V414" opacity=".42" /><path d="M60 303h14" opacity=".3" /><path d="M60 333h14" opacity=".3" /><path d="M60 363h14" opacity=".3" /><path d="M60 393h14" opacity=".3" /><path d="M88 420V348h34V420" /><path d="M99.3 356V414" opacity=".42" /><path d="M110.7 356V414" opacity=".42" /><path d="M92 366h26" opacity=".3" /><path d="M92 396h26" opacity=".3" /><path d="M128 420V130h26V420" /><path d="M141.0 138V414" opacity=".42" /><path d="M132 148h18" opacity=".3" /><path d="M132 178h18" opacity=".3" /><path d="M132 208h18" opacity=".3" /><path d="M132 238h18" opacity=".3" /><path d="M132 268h18" opacity=".3" /><path d="M132 298h18" opacity=".3" /><path d="M132 328h18" opacity=".3" /><path d="M132 358h18" opacity=".3" /><path d="M132 388h18" opacity=".3" /><path d="M160 420V171h22V420" /><path d="M171.0 179V414" opacity=".42" /><path d="M164 189h14" opacity=".3" /><path d="M164 219h14" opacity=".3" /><path d="M164 249h14" opacity=".3" /><path d="M164 279h14" opacity=".3" /><path d="M164 309h14" opacity=".3" /><path d="M164 339h14" opacity=".3" /><path d="M164 369h14" opacity=".3" /><path d="M164 399h14" opacity=".3" /><path d="M184 420V301h22V420" /><path d="M195.0 309V414" opacity=".42" /><path d="M188 319h14" opacity=".3" /><path d="M188 349h14" opacity=".3" /><path d="M188 379h14" opacity=".3" /><path d="M188 409h14" opacity=".3" /><path d="M208 420V199h34V420" /><path d="M219.3 207V414" opacity=".42" /><path d="M230.7 207V414" opacity=".42" /><path d="M212 217h26" opacity=".3" /><path d="M212 247h26" opacity=".3" /><path d="M212 277h26" opacity=".3" /><path d="M212 307h26" opacity=".3" /><path d="M212 337h26" opacity=".3" /><path d="M212 367h26" opacity=".3" /><path d="M212 397h26" opacity=".3" /><path d="M244 420V93h34V420" /><path d="M255.3 101V414" opacity=".42" /><path d="M266.7 101V414" opacity=".42" /><path d="M248 111h26" opacity=".3" /><path d="M248 141h26" opacity=".3" /><path d="M248 171h26" opacity=".3" /><path d="M248 201h26" opacity=".3" /><path d="M248 231h26" opacity=".3" /><path d="M248 261h26" opacity=".3" /><path d="M248 291h26" opacity=".3" /><path d="M248 321h26" opacity=".3" /><path d="M248 351h26" opacity=".3" /><path d="M248 381h26" opacity=".3" /><path d="M248 411h26" opacity=".3" /><path d="M280 420V282h22V420" /><path d="M291.0 290V414" opacity=".42" /><path d="M284 300h14" opacity=".3" /><path d="M284 330h14" opacity=".3" /><path d="M284 360h14" opacity=".3" /><path d="M284 390h14" opacity=".3" /><path d="M304 420V97h22V420" /><path d="M315.0 105V414" opacity=".42" /><path d="M308 115h14" opacity=".3" /><path d="M308 145h14" opacity=".3" /><path d="M308 175h14" opacity=".3" /><path d="M308 205h14" opacity=".3" /><path d="M308 235h14" opacity=".3" /><path d="M308 265h14" opacity=".3" /><path d="M308 295h14" opacity=".3" /><path d="M308 325h14" opacity=".3" /><path d="M308 355h14" opacity=".3" /><path d="M308 385h14" opacity=".3" /><path d="M330 420V178h22V420" /><path d="M341.0 186V414" opacity=".42" /><path d="M334 196h14" opacity=".3" /><path d="M334 226h14" opacity=".3" /><path d="M334 256h14" opacity=".3" /><path d="M334 286h14" opacity=".3" /><path d="M334 316h14" opacity=".3" /><path d="M334 346h14" opacity=".3" /><path d="M334 376h14" opacity=".3" /><path d="M334 406h14" opacity=".3" /></g></svg>
+  <div class="deck__vig"></div>
+</div>
+
+<nav class="decknav" aria-label="章节索引">
+  <p class="decknav__t">嘉陵旧梦·次元新厂<i>Jialing Reverie</i></p>
+  <a href="#c01"><b>01</b>设计命题</a>
+  <a href="#c02"><b>02</b>核心策略：工业重生 × 次元新生</a>
+  <a href="#c03"><b>03</b>场地与历史沿革</a>
+  <a href="#c04"><b>04</b>人群定位与业态策略</a>
+  <a href="#c05"><b>05</b>总平面与功能布局</a>
+  <a href="#c06"><b>06</b>地块功能与整体效果</a>
+  <a href="#c07"><b>07</b>空间剖面与场景</a>
+</nav>
+
+<div class="deckmeta" aria-hidden="true">
+  <p class="deckmeta__k">城市设计</p>
+  <p class="deckmeta__v">05 — 嘉陵旧梦·次元新厂</p>
+  <span class="deckmeta__line"></span>
+</div>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© 2026 杨官运</span>
+    <a href="mailto:gyyangmail@163.com">gyyangmail@163.com</a>
+    <a href="../index.html">回到目录 ↑</a>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="图片查看" hidden>
+  <button class="lightbox__close" type="button" aria-label="关闭">×</button>
+  <button class="lightbox__prev" type="button" aria-label="上一张">‹</button>
+  <button class="lightbox__next" type="button" aria-label="下一张">›</button>
+  <figure class="lightbox__stage">
+    <img id="lightboxImg" src="" alt="">
+  </figure>
+  <p class="lightbox__cap" id="lightboxCap"></p>
+</div>
+
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>

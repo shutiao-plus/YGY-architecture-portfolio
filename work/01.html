@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>叠浮绿境 — 杨官运</title>
+<meta name="description" content="叠浮绿境 · 山地滨江超高层办公建筑设计 — 杨官运建筑设计作品。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="叠浮绿境 — 杨官运">
+<meta property="og:image" content="../assets/p/project-01/01-cover.webp">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2316140f'/%3E%3Ctext x='16' y='23' font-size='17' fill='%23f7f5f1' text-anchor='middle' font-family='Georgia,serif'%3E%E6%9D%A8%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/css/style.css">
+
+<!-- 落地页的第一帧：如果是从目录点进来的，趁解析时就把那张封面盖上，
+     避免"新文档先白一下、再出现遮罩"造成的停顿感 -->
+<script>
+  (function () {
+    try {
+      var raw = sessionStorage.getItem('dsh-transit');
+      if (!raw) return;
+      sessionStorage.removeItem('dsh-transit');
+      var d = JSON.parse(raw);
+      if (!d || d.no !== '01' || !d.src) return;
+      var v = document.createElement('div');
+      v.id = 'arrive';
+      v.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#f6f1e7;' +
+        'opacity:1;transition:opacity .34s ease .04s;pointer-events:none';
+      v.innerHTML = '<img alt="" src="' + d.src + '" style="width:100%;height:100%;object-fit:cover">';
+      (document.documentElement).appendChild(v);
+      window.__arriveAt = Date.now();
+      addEventListener('load', function () {
+        setTimeout(function () {
+          v.style.opacity = '0';
+          setTimeout(function () { v.remove(); }, 800);
+        }, 60);
+      });
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body class="page-work" data-no="01" style="--accent:#3f4f5e; --deck-bg:#0d1218; --deck-glow:#27404f">
+
+<script>
+  (function () {
+    document.documentElement.classList.add('js');
+    setTimeout(function () {
+      if (window.__revealReady) return;
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
+    }, 1500);
+  })();
+</script>
+
+<a class="skip" href="#main">跳到内容</a>
+
+<header class="site-head" id="siteHead">
+  <a class="brand" href="../index.html">
+    <span class="brand__cn">杨官运</span>
+    <span class="brand__en">YANG GUANYUN</span>
+  </a>
+  <div class="head-right">
+    <span class="head-count">01 / 06</span>
+    <nav class="head-nav" aria-label="主导航">
+      <a href="../index.html">目录</a>
+      <a href="../about.html">关于</a>
+    </nav>
+    <button class="viewswitch" id="viewSwitch" type="button" aria-pressed="false">
+      <span class="viewswitch__i" aria-hidden="true"></span>
+      <span class="viewswitch__t">叠层</span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+<article class="work">
+
+  <header class="work__hero">
+    <img src="../assets/p/project-01/01-cover.webp"
+         srcset="../assets/p/project-01/01-cover-800.webp 800w, ../assets/p/project-01/01-cover-1100.webp 1100w, ../assets/p/project-01/01-cover.webp 2000w"
+         sizes="100vw" alt="叠浮绿境 主视觉"
+         width="2000" height="1125" fetchpriority="high" decoding="async">
+    <div class="work__scrim" aria-hidden="true"></div>
+    <div class="work__head">
+      <div class="wrap">
+        <p class="work__kicker"><span class="work__no">01</span><span class="work__type">高层办公建筑设计</span></p>
+        <h1 class="work__title">叠浮绿境</h1>
+        <p class="work__en">Floating Green Terraces</p>
+        <p class="work__sub">山地滨江超高层办公建筑设计</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <dl class="work__spec">
+      <div><dt>地点</dt><dd>重庆市两江新区</dd></div>
+      <div><dt>面积</dt><dd>84,784 ㎡</dd></div>
+      <div><dt>年份</dt><dd>2026.01</dd></div>
+      <div><dt>高度</dt><dd>132 m</dd></div>
+      <div><dt>团队</dt><dd>杨官运、王一凡</dd></div>
+      <div><dt>来源</dt><dd>大四上课程作业</dd></div>
+      <div><dt>指导</dt><dd>张海滨</dd></div>
+      <div><dt>参与</dt><dd>前期分析、方案构思、3D 建模、塔楼工程图、后期分析、渲染、后期处理</dd></div>
+    </dl>
+
+    <p class="work__lede">三组被钢桁架托起的「空中盒子」——盒子之间是花园，盒子下方还给城市一条通往江岸的路。</p>
+
+    <div class="work__body">
+  <section class="chapter" id="c01">
+    <div class="chapter__rail">
+      <span class="chapter__no">01</span>
+      <h2 class="chapter__title">设计挑战</h2>
+    </div>
+    <p class="reveal">场地位于重庆两江新区核心滨江地段，周边观音桥、解放碑、沙坪坝等商圈环抱，城市界面密集。东高西低的台地高差约 7 米、南北向高差约 15 米，江景视线被周边高层封堵，地面层与滨江公共空间之间是断的。高密度城市里，建筑与江景、与公共空间的连接怎么重新建立，是设计的核心命题。</p>
+      <figure class="fig fig--wide reveal" data-fig="p01">
+        <img src="../assets/p/project-01/01-site.webp" srcset="../assets/p/project-01/01-site-800.webp 800w, ../assets/p/project-01/01-site-1100.webp 1100w, ../assets/p/project-01/01-site.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="场地分析"
+             width="1600" height="941" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">01</span>场地分析</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c02">
+    <div class="chapter__rail">
+      <span class="chapter__no">02</span>
+      <h2 class="chapter__title">核心策略</h2>
+    </div>
+    <p class="reveal">以「核心筒—钢悬挂」结构体系让塔楼悬浮于基座之上，释放地面层形成通往江岸的公共通廊。三段桁架（低区 3—9F、中区 11—17F、高区 21—28F）吊挂塔楼，每段之间嵌入两层通高的无柱空中花园，把垂直绿化从屋顶一直延伸到地面。智能幕墙、屋顶光伏与雨水回收整合成同一套节能表皮。</p>
+    <div class="chapter__key reveal">
+      <h4>设计关键词：悬浮 · 通高花园 · 垂直生态</h4>
+      <p>建筑不是封闭的体量，而是三组被钢桁架托起的「空中盒子」——盒子之间是花园，盒子内部是办公，盒子下方是城市。阳光与江风穿透建筑，公共空间从地面一直延伸到天空。</p>
+    </div>
+      <figure class="fig fig--wide reveal" data-fig="p01">
+        <img src="../assets/p/project-01/02-strategy.webp" srcset="../assets/p/project-01/02-strategy-800.webp 800w, ../assets/p/project-01/02-strategy-1100.webp 1100w, ../assets/p/project-01/02-strategy.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="设计策略与功能分析"
+             width="1600" height="1000" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">02</span>设计策略与功能分析</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p01">
+        <img src="../assets/p/project-01/03-axo.webp" srcset="../assets/p/project-01/03-axo-800.webp 800w, ../assets/p/project-01/03-axo.webp 1067w" sizes="(max-width: 900px) 100vw, 68vw" alt="轴测分解"
+             width="1067" height="1300" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">03</span>轴测分解</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c03">
+    <div class="chapter__rail">
+      <span class="chapter__no">03</span>
+      <h2 class="chapter__title">场地设计与总平面</h2>
+    </div>
+      <figure class="fig fig--wide chapter__fig--out reveal" data-fig="p01">
+        <img src="../assets/p/project-01/04-plan.webp" srcset="../assets/p/project-01/04-plan-800.webp 800w, ../assets/p/project-01/04-plan-1100.webp 1100w, ../assets/p/project-01/04-plan.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="总平面图"
+             width="1600" height="1067" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">04</span>总平面图</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c04">
+    <div class="chapter__rail">
+      <span class="chapter__no">04</span>
+      <h2 class="chapter__title">体块生成与空间逻辑</h2>
+    </div>
+    <p class="reveal">平面上核心筒居中，生态凹槽沿东西两侧切入；立面上从纵横延伸到垂直绿化退台，最终收成三段桁架层；空间上裙房平台、绿化延伸带、通透中庭三层贯通，把地面的公共空间引进建筑内部。</p>
+    <div class="flow reveal">
+      <div class="flow__step">
+        <div class="flow__no">01</div>
+        <div class="flow__t">体量回应</div>
+        <div class="flow__d">回应周边城市肌理与江岸视线关系</div>
+      </div>
+      <div class="flow__step">
+        <div class="flow__no">02</div>
+        <div class="flow__t">体块分割</div>
+        <div class="flow__d">切入垂直绿化凹槽，形成凹凸界面</div>
+      </div>
+      <div class="flow__step">
+        <div class="flow__no">03</div>
+        <div class="flow__t">桁架吊挂</div>
+        <div class="flow__d">三段钢桁架悬挂塔楼，形成悬浮花园</div>
+      </div>
+      <div class="flow__step">
+        <div class="flow__no">04</div>
+        <div class="flow__t">表皮整合</div>
+        <div class="flow__d">智能幕墙、光伏板与绿化系统一体化</div>
+      </div>
+    </div>
+      <figure class="fig fig--wide reveal" data-fig="p01">
+        <img src="../assets/p/project-01/05-form.webp" srcset="../assets/p/project-01/05-form-800.webp 800w, ../assets/p/project-01/05-form-1100.webp 1100w, ../assets/p/project-01/05-form.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="形体变化与核心筒"
+             width="1600" height="729" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">05</span>形体变化与核心筒</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c05">
+    <div class="chapter__rail">
+      <span class="chapter__no">05</span>
+      <h2 class="chapter__title">垂直生态与绿建技术</h2>
+    </div>
+    <p class="reveal">垂直绿化分四级：屋顶桁架绿化 → 悬浮花园 → 桁架平台绿化 → 底部绿化引入，从制高点到地面连续贯通。雨水经初步净化与中水净化后用于灌溉、清洁与冲厕；屋顶光伏补充能耗；智能幕墙夏季白天遮阳通风、夜间散热降温，表皮自己会调节气候。</p>
+      <figure class="fig fig--wide reveal" data-fig="p01">
+        <img src="../assets/p/project-01/06-technique.webp" srcset="../assets/p/project-01/06-technique-800.webp 800w, ../assets/p/project-01/06-technique-1100.webp 1100w, ../assets/p/project-01/06-technique.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="交通分析、疏散分析、绿化分析、绿建技术分析"
+             width="1600" height="780" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">06</span>交通分析、疏散分析、绿化分析、绿建技术分析</figcaption>
+      </figure>
+  </section>
+
+  <section class="chapter" id="c06">
+    <div class="chapter__rail">
+      <span class="chapter__no">06</span>
+      <h2 class="chapter__title">结构体系与空间呈现</h2>
+    </div>
+    <p class="reveal">核心筒—钢桁架悬挂体系：箱型钢与 H 型钢共同作用吊挂上部塔楼，地下车库采用 1000×1000 柱网框架。三段桁架对应三段办公楼层，桁架之间是无柱的两层通高花园——桁架本身成为空间景观，而不是被藏起来的构件。</p>
+      <figure class="fig fig--wide reveal" data-fig="p01">
+        <img src="../assets/p/project-01/07-structure.webp" srcset="../assets/p/project-01/07-structure-800.webp 800w, ../assets/p/project-01/07-structure-1100.webp 1100w, ../assets/p/project-01/07-structure.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="结构分析"
+             width="1600" height="1067" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">07</span>结构分析</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p01">
+        <img src="../assets/p/project-01/08-garden.webp" srcset="../assets/p/project-01/08-garden-800.webp 800w, ../assets/p/project-01/08-garden-1100.webp 1100w, ../assets/p/project-01/08-garden.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="空中花园"
+             width="1600" height="754" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">08</span>空中花园</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p01">
+        <img src="../assets/p/project-01/09-interior.webp" srcset="../assets/p/project-01/09-interior-800.webp 800w, ../assets/p/project-01/09-interior-1100.webp 1100w, ../assets/p/project-01/09-interior.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="大空间效果"
+             width="1600" height="674" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">09</span>大空间效果</figcaption>
+      </figure>
+      <figure class="fig fig--wide reveal" data-fig="p01">
+        <img src="../assets/p/project-01/10-podium.webp" srcset="../assets/p/project-01/10-podium-800.webp 800w, ../assets/p/project-01/10-podium-1100.webp 1100w, ../assets/p/project-01/10-podium.webp 1600w" sizes="(max-width: 900px) 100vw, 68vw" alt="裙房效果"
+             width="1600" height="1010" loading="lazy" decoding="async">
+        <figcaption><span class="fig__no">10</span>裙房效果</figcaption>
+      </figure>
+  </section>
+    </div>
+  </div>
+
+  <nav class="pager" aria-label="作品翻页">
+    <div class="pager__grid">
+      <a class="pager__item pager__item--prev" href="06.html">
+        <span class="pager__dir">← 上一个</span>
+        <span class="pager__title">归樵问竹</span>
+        <span class="pager__type">清代江南园林设计</span>
+      </a>
+      <a class="pager__item pager__item--next" href="02.html">
+        <span class="pager__dir">下一个 →</span>
+        <span class="pager__title">浮光织隙，旧韵新结</span>
+        <span class="pager__type">乡村旧建改造</span>
+      </a>
+    </div>
+  </nav>
+
+</article>
+</main>
+
+<!-- 叠层观看：背景城市线稿 + 左侧章节索引 + 右侧标注 -->
+<div class="deck" aria-hidden="true">
+  <div class="deck__sky"></div>
+  <div class="deck__grid"></div>
+  <svg class="deck__city deck__city--l" viewBox="0 0 320 420" fill="none" aria-hidden="true"><path d="M-20 420V183h40V420" /><path d="M-10.0 191V414" opacity=".42" /><path d="M0.0 191V414" opacity=".42" /><path d="M10.0 191V414" opacity=".42" /><path d="M-16 201h32" opacity=".3" /><path d="M-16 231h32" opacity=".3" /><path d="M-16 261h32" opacity=".3" /><path d="M-16 291h32" opacity=".3" /><path d="M-16 321h32" opacity=".3" /><path d="M-16 351h32" opacity=".3" /><path d="M-16 381h32" opacity=".3" /><path d="M-16 411h32" opacity=".3" /><path d="M22 420V336h22V420" /><path d="M33.0 344V414" opacity=".42" /><path d="M26 354h14" opacity=".3" /><path d="M26 384h14" opacity=".3" /><path d="M54 420V266h40V420" /><path d="M64.0 274V414" opacity=".42" /><path d="M74.0 274V414" opacity=".42" /><path d="M84.0 274V414" opacity=".42" /><path d="M58 284h32" opacity=".3" /><path d="M58 314h32" opacity=".3" /><path d="M58 344h32" opacity=".3" /><path d="M58 374h32" opacity=".3" /><path d="M58 404h32" opacity=".3" /><path d="M100 420V265h34V420" /><path d="M111.3 273V414" opacity=".42" /><path d="M122.7 273V414" opacity=".42" /><path d="M104 283h26" opacity=".3" /><path d="M104 313h26" opacity=".3" /><path d="M104 343h26" opacity=".3" /><path d="M104 373h26" opacity=".3" /><path d="M104 403h26" opacity=".3" /><path d="M136 420V103h34V420" /><path d="M147.3 111V414" opacity=".42" /><path d="M158.7 111V414" opacity=".42" /><path d="M140 121h26" opacity=".3" /><path d="M140 151h26" opacity=".3" /><path d="M140 181h26" opacity=".3" /><path d="M140 211h26" opacity=".3" /><path d="M140 241h26" opacity=".3" /><path d="M140 271h26" opacity=".3" /><path d="M140 301h26" opacity=".3" /><path d="M140 331h26" opacity=".3" /><path d="M140 361h26" opacity=".3" /><path d="M140 391h26" opacity=".3" /><path d="M174 420V337h26V420" /><path d="M187.0 345V414" opacity=".42" /><path d="M178 355h18" opacity=".3" /><path d="M178 385h18" opacity=".3" /><path d="M210 420V170h30V420" /><path d="M220.0 178V414" opacity=".42" /><path d="M230.0 178V414" opacity=".42" /><path d="M214 188h22" opacity=".3" /><path d="M214 218h22" opacity=".3" /><path d="M214 248h22" opacity=".3" /><path d="M214 278h22" opacity=".3" /><path d="M214 308h22" opacity=".3" /><path d="M214 338h22" opacity=".3" /><path d="M214 368h22" opacity=".3" /><path d="M214 398h22" opacity=".3" /><path d="M244 420V108h26V420" /><path d="M257.0 116V414" opacity=".42" /><path d="M248 126h18" opacity=".3" /><path d="M248 156h18" opacity=".3" /><path d="M248 186h18" opacity=".3" /><path d="M248 216h18" opacity=".3" /><path d="M248 246h18" opacity=".3" /><path d="M248 276h18" opacity=".3" /><path d="M248 306h18" opacity=".3" /><path d="M248 336h18" opacity=".3" /><path d="M248 366h18" opacity=".3" /><path d="M248 396h18" opacity=".3" /><path d="M274 420V233h40V420" /><path d="M284.0 241V414" opacity=".42" /><path d="M294.0 241V414" opacity=".42" /><path d="M304.0 241V414" opacity=".42" /><path d="M278 251h32" opacity=".3" /><path d="M278 281h32" opacity=".3" /><path d="M278 311h32" opacity=".3" /><path d="M278 341h32" opacity=".3" /><path d="M278 371h32" opacity=".3" /><path d="M278 401h32" opacity=".3" /><path d="M318 420V113h34V420" /><path d="M329.3 121V414" opacity=".42" /><path d="M340.7 121V414" opacity=".42" /><path d="M322 131h26" opacity=".3" /><path d="M322 161h26" opacity=".3" /><path d="M322 191h26" opacity=".3" /><path d="M322 221h26" opacity=".3" /><path d="M322 251h26" opacity=".3" /><path d="M322 281h26" opacity=".3" /><path d="M322 311h26" opacity=".3" /><path d="M322 341h26" opacity=".3" /><path d="M322 371h26" opacity=".3" /><path d="M322 401h26" opacity=".3" /></svg>
+  <svg class="deck__city deck__city--r" viewBox="0 0 320 420" fill="none" aria-hidden="true"><g transform="translate(320 0) scale(-1 1)"><path d="M-20 420V355h22V420" /><path d="M-9.0 363V414" opacity=".42" /><path d="M-16 373h14" opacity=".3" /><path d="M-16 403h14" opacity=".3" /><path d="M6 420V85h34V420" /><path d="M17.3 93V414" opacity=".42" /><path d="M28.7 93V414" opacity=".42" /><path d="M10 103h26" opacity=".3" /><path d="M10 133h26" opacity=".3" /><path d="M10 163h26" opacity=".3" /><path d="M10 193h26" opacity=".3" /><path d="M10 223h26" opacity=".3" /><path d="M10 253h26" opacity=".3" /><path d="M10 283h26" opacity=".3" /><path d="M10 313h26" opacity=".3" /><path d="M10 343h26" opacity=".3" /><path d="M10 373h26" opacity=".3" /><path d="M10 403h26" opacity=".3" /><path d="M42 420V313h26V420" /><path d="M55.0 321V414" opacity=".42" /><path d="M46 331h18" opacity=".3" /><path d="M46 361h18" opacity=".3" /><path d="M46 391h18" opacity=".3" /><path d="M70 420V338h30V420" /><path d="M80.0 346V414" opacity=".42" /><path d="M90.0 346V414" opacity=".42" /><path d="M74 356h22" opacity=".3" /><path d="M74 386h22" opacity=".3" /><path d="M110 420V299h26V420" /><path d="M123.0 307V414" opacity=".42" /><path d="M114 317h18" opacity=".3" /><path d="M114 347h18" opacity=".3" /><path d="M114 377h18" opacity=".3" /><path d="M114 407h18" opacity=".3" /><path d="M142 420V158h22V420" /><path d="M153.0 166V414" opacity=".42" /><path d="M146 176h14" opacity=".3" /><path d="M146 206h14" opacity=".3" /><path d="M146 236h14" opacity=".3" /><path d="M146 266h14" opacity=".3" /><path d="M146 296h14" opacity=".3" /><path d="M146 326h14" opacity=".3" /><path d="M146 356h14" opacity=".3" /><path d="M146 386h14" opacity=".3" /><path d="M168 420V226h34V420" /><path d="M179.3 234V414" opacity=".42" /><path d="M190.7 234V414" opacity=".42" /><path d="M172 244h26" opacity=".3" /><path d="M172 274h26" opacity=".3" /><path d="M172 304h26" opacity=".3" /><path d="M172 334h26" opacity=".3" /><path d="M172 364h26" opacity=".3" /><path d="M172 394h26" opacity=".3" /><path d="M212 420V311h40V420" /><path d="M222.0 319V414" opacity=".42" /><path d="M232.0 319V414" opacity=".42" /><path d="M242.0 319V414" opacity=".42" /><path d="M216 329h32" opacity=".3" /><path d="M216 359h32" opacity=".3" /><path d="M216 389h32" opacity=".3" /><path d="M258 420V167h26V420" /><path d="M271.0 175V414" opacity=".42" /><path d="M262 185h18" opacity=".3" /><path d="M262 215h18" opacity=".3" /><path d="M262 245h18" opacity=".3" /><path d="M262 275h18" opacity=".3" /><path d="M262 305h18" opacity=".3" /><path d="M262 335h18" opacity=".3" /><path d="M262 365h18" opacity=".3" /><path d="M262 395h18" opacity=".3" /><path d="M286 420V185h30V420" /><path d="M296.0 193V414" opacity=".42" /><path d="M306.0 193V414" opacity=".42" /><path d="M290 203h22" opacity=".3" /><path d="M290 233h22" opacity=".3" /><path d="M290 263h22" opacity=".3" /><path d="M290 293h22" opacity=".3" /><path d="M290 323h22" opacity=".3" /><path d="M290 353h22" opacity=".3" /><path d="M290 383h22" opacity=".3" /><path d="M290 413h22" opacity=".3" /><path d="M326 420V210h30V420" /><path d="M336.0 218V414" opacity=".42" /><path d="M346.0 218V414" opacity=".42" /><path d="M330 228h22" opacity=".3" /><path d="M330 258h22" opacity=".3" /><path d="M330 288h22" opacity=".3" /><path d="M330 318h22" opacity=".3" /><path d="M330 348h22" opacity=".3" /><path d="M330 378h22" opacity=".3" /><path d="M330 408h22" opacity=".3" /></g></svg>
+  <div class="deck__vig"></div>
+</div>
+
+<nav class="decknav" aria-label="章节索引">
+  <p class="decknav__t">叠浮绿境<i>Floating Green Terraces</i></p>
+  <a href="#c01"><b>01</b>设计挑战</a>
+  <a href="#c02"><b>02</b>核心策略</a>
+  <a href="#c03"><b>03</b>场地设计与总平面</a>
+  <a href="#c04"><b>04</b>体块生成与空间逻辑</a>
+  <a href="#c05"><b>05</b>垂直生态与绿建技术</a>
+  <a href="#c06"><b>06</b>结构体系与空间呈现</a>
+</nav>
+
+<div class="deckmeta" aria-hidden="true">
+  <p class="deckmeta__k">高层办公建筑设计</p>
+  <p class="deckmeta__v">01 — 叠浮绿境</p>
+  <span class="deckmeta__line"></span>
+</div>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© 2026 杨官运</span>
+    <a href="mailto:gyyangmail@163.com">gyyangmail@163.com</a>
+    <a href="../index.html">回到目录 ↑</a>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="图片查看" hidden>
+  <button class="lightbox__close" type="button" aria-label="关闭">×</button>
+  <button class="lightbox__prev" type="button" aria-label="上一张">‹</button>
+  <button class="lightbox__next" type="button" aria-label="下一张">›</button>
+  <figure class="lightbox__stage">
+    <img id="lightboxImg" src="" alt="">
+  </figure>
+  <p class="lightbox__cap" id="lightboxCap"></p>
+</div>
+
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>
