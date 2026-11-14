@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>页面走失了 — 杨官运</title>
+<style>
+  html, body { height: 100%; margin: 0; }
+  body {
+    display: grid; place-content: center; gap: 26px;
+    background: #f6f1e7; color: #1b1812;
+    font-family: "Noto Serif SC", "Songti SC", SimSun, serif;
+    text-align: center; padding: 24px;
+  }
+  .no { font: 500 clamp(64px, 18vw, 140px)/1 "Times New Roman", serif; letter-spacing: -.03em; }
+  .en { font: 400 11px/1.6 ui-monospace, monospace; letter-spacing: .28em; color: #6b6455; text-transform: uppercase; }
+  p { max-width: 26em; margin: 0 auto; font-size: 14px; line-height: 2; color: #4a4438; }
+  a {
+    justify-self: center; margin-top: 6px; padding: 11px 26px;
+    border: 1px solid #1b1812; color: #1b1812; text-decoration: none;
+    font-size: 13px; letter-spacing: .12em; transition: background .2s, color .2s;
+  }
+  a:hover { background: #1b1812; color: #f6f1e7; }
+</style>
+</head>
+<body>
+  <div class="no">404</div>
+  <div class="en">Page Not Found</div>
+  <p>这一页大概还留在图板上。<br>回到封面，从目录重新进一次。</p>
+  <a href="./index.html">返回封面</a>
+  <script>
+    document.querySelector("a").addEventListener("click", function (e) {
+      if (history.length > 1) { e.preventDefault(); history.back(); }
+    });
+  </script>
+</body>
+</html>
